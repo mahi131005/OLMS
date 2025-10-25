@@ -146,6 +146,20 @@ def admin_dashboard(request):
 
     return render(request, 'admin_dashboard.html', {'feedbacks': feedbacks})
 
+from django.http import JsonResponse
+
+def chatbot_response(request):
+    if request.method == 'POST':
+        user_input = request.POST.get('message')
+        if not user_input:
+            return JsonResponse({'error': 'Empty message'}, status=400)
+        
+        # Simple placeholder reply
+        reply = f"You said: {user_input}"
+        return JsonResponse({'response': reply})
+    
+    return JsonResponse({'error': 'Invalid request method'}, status=405)
+
 def export_feedback_pdf(request):
     if not request.user.is_superuser:
         return HttpResponse("Unauthorized", status=401)
