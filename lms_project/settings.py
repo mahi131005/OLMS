@@ -97,18 +97,14 @@ WSGI_APPLICATION = 'lms_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django',
-        'USER':'root',
-        'PASSWORD':'Mahi1310kulkarni',
-        'HOST':'127.0.0.1',
-        # Open MySQL dashboard and check on which ip (or localhost) your mysql is running
-        'PORT':'3306', 
-        # 3306 is the default port number
-        'OPTIONS': {
-            'init_command': "SET time_zone='+05:30';"  # Force IST timezone
-        },
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT', '3306'),
     }
 }
+
 
 
 # Password validation
@@ -145,9 +141,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'fallback-secret')
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
