@@ -148,17 +148,100 @@ def admin_dashboard(request):
 
 from django.http import JsonResponse
 
+from django.http import JsonResponse
+
+# Predefined responses for tech terms and programming languages
+PREDEFINED_RESPONSES = {
+    # Programming languages
+    "python": "Python is a versatile language for web development, data science, AI, and automation.",
+    "java": "Java is widely used for enterprise apps, Android development, and backend systems.",
+    "c++": "C++ is great for system programming, game development, and performance-critical applications.",
+    "c#": "C# is mainly used for Windows apps, Unity games, and backend development with .NET.",
+    "javascript": "JavaScript is essential for frontend web development and can also be used on the backend with Node.js.",
+    "typescript": "TypeScript is a strongly typed superset of JavaScript for safer, scalable code.",
+    "go": "Go (Golang) is efficient for backend services, microservices, and cloud applications.",
+    "ruby": "Ruby is known for web development with Ruby on Rails.",
+    "php": "PHP is widely used for server-side web development and content management systems.",
+    "rust": "Rust focuses on safety and performance, often used in systems programming.",
+
+    # Web development
+    "html": "HTML is the standard markup language for creating web pages.",
+    "css": "CSS styles HTML content and controls the visual layout of web pages.",
+    "django": "Django is a high-level Python web framework that encourages rapid development.",
+    "flask": "Flask is a lightweight Python web framework for building web apps quickly.",
+    "react": "React is a JavaScript library for building interactive user interfaces.",
+    "angular": "Angular is a TypeScript-based framework for building dynamic web applications.",
+    "vue": "Vue.js is a progressive JavaScript framework for building user interfaces.",
+    "bootstrap": "Bootstrap is a CSS framework for responsive and mobile-first web design.",
+    "tailwind": "Tailwind CSS is a utility-first CSS framework for rapid UI development.",
+
+    # Databases
+    "mysql": "MySQL is a popular open-source relational database system.",
+    "postgresql": "PostgreSQL is an advanced open-source relational database known for reliability.",
+    "mongodb": "MongoDB is a NoSQL database that stores data in flexible JSON-like documents.",
+    "sqlite": "SQLite is a lightweight, file-based relational database ideal for small apps.",
+    "redis": "Redis is an in-memory database used for caching and fast data storage.",
+
+    # Version control & DevOps
+    "git": "Git is a version control system that tracks changes in source code.",
+    "github": "GitHub is a platform for hosting Git repositories and collaborating on code.",
+    "docker": "Docker is a platform for containerizing applications for consistent deployment.",
+    "kubernetes": "Kubernetes is used to orchestrate and manage containerized applications.",
+    "ci/cd": "CI/CD automates testing and deployment to improve software delivery.",
+
+    # AI/ML
+    "ai": "Artificial Intelligence enables machines to mimic human intelligence.",
+    "ml": "Machine Learning is a subset of AI where systems learn from data.",
+    "deep learning": "Deep Learning uses neural networks to model complex patterns in data.",
+    "tensorflow": "TensorFlow is an open-source library for machine learning and deep learning.",
+    "pytorch": "PyTorch is a flexible deep learning library used for AI research and production.",
+
+    # Cloud & Hosting
+    "aws": "AWS is a cloud platform offering compute, storage, and many other services.",
+    "azure": "Azure is Microsoft’s cloud platform for hosting and managing applications.",
+    "gcp": "Google Cloud Platform offers cloud computing services including databases and ML tools.",
+    "render": "Render is a cloud platform for deploying web apps and services easily.",
+    "heroku": "Heroku is a cloud platform for deploying web apps quickly.",
+
+    # Networking & Security
+    "http": "HTTP is the protocol used for communication between web servers and clients.",
+    "https": "HTTPS is a secure version of HTTP using encryption (TLS/SSL).",
+    "api": "An API (Application Programming Interface) allows apps to communicate with each other.",
+    "rest": "REST is a standard for building APIs with stateless requests.",
+    "graphql": "GraphQL is a flexible API query language for retrieving only the data you need.",
+    "jwt": "JWT (JSON Web Token) is used for secure user authentication in web apps.",
+    "oauth": "OAuth is a protocol for secure authorization of apps without sharing passwords.",
+
+    # Miscellaneous tech
+    "linux": "Linux is an open-source operating system widely used for servers and development.",
+    "windows": "Windows is a popular operating system for desktops and servers.",
+    "macos": "macOS is Apple’s desktop operating system.",
+    "vscode": "VS Code is a lightweight and popular code editor from Microsoft.",
+    "intellij": "IntelliJ IDEA is a powerful IDE mainly for Java and Kotlin development.",
+    "api key": "API keys are used to authenticate applications accessing APIs.",
+    "json": "JSON is a lightweight data format used for exchanging data between applications.",
+    "xml": "XML is a markup language used to store and transport data.",
+    "oop": "OOP (Object-Oriented Programming) organizes code into objects with data and methods.",
+    "restful": "RESTful APIs follow REST principles to provide structured web services.",
+}
+
 def chatbot_response(request):
     if request.method == 'POST':
-        user_input = request.POST.get('message')
+        user_input = request.POST.get('message', '').lower()  # lowercase for matching
         if not user_input:
             return JsonResponse({'error': 'Empty message'}, status=400)
         
-        # Simple placeholder reply
+        # Check for keywords in user input
+        for keyword, response in PREDEFINED_RESPONSES.items():
+            if keyword in user_input:
+                return JsonResponse({'response': response})
+        
+        # Default response if no keywords match
         reply = f"You said: {user_input}"
         return JsonResponse({'response': reply})
     
     return JsonResponse({'error': 'Invalid request method'}, status=405)
+
 
 def export_feedback_pdf(request):
     if not request.user.is_superuser:
