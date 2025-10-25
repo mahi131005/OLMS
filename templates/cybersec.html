@@ -1,0 +1,1244 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Roadmap - EduLearn</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'domainstyles.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="{% static 'domainstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'popupstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'darkmode.css' %}" rel="stylesheet">
+    <link href="{% static 'chatbot.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    {% include 'header.html' %}
+
+    <!-- Hero Section -->
+    <section class="webdev-hero">
+        <div class="container">
+            <div class="webdev-hero-content">
+                <h1>Cybersecurity Roadmap</h1>
+                <p>Master the art of protecting digital assets and systems from threats. From network security fundamentals to advanced penetration testing, we'll guide you through every step.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Introduction -->
+    <section class="roadmap-intro, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Your Journey to Becoming a Cybersecurity Professional</h2>
+                <p>Follow this roadmap to go from complete beginner to cybersecurity expert. Each stage builds upon the previous one, providing you with a comprehensive skill set in digital security.</p>
+            </div>
+            <div class="roadmap-overview">
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon beginner">
+                        <span>1</span>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Learn the fundamentals</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon intermediate">
+                        <span>2</span>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>Build practical skills</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon advanced">
+                        <span>3</span>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>Specialized security</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon expert">
+                        <span>4</span>
+                    </div>
+                    <h3>Expert</h3>
+                    <p>Advanced techniques</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Steps -->
+    <section class="roadmap-steps">
+        <div class="container">
+            <!-- Step 1: Computer Networking Fundamentals -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">1</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Computer Networking Fundamentals</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Understanding how networks operate is essential for identifying vulnerabilities and implementing security measures.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="networksf1">
+                                    <span class="checkbox-text" data-for="networksf1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        OSI and TCP/IP models
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="networksf2">
+                                    <span class="checkbox-text" data-for="networksf2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        IP addressing and subnetting
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="networksf3">
+                                    <span class="checkbox-text" data-for="networksf3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Common network protocols
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="networksf4">
+                                    <span class="checkbox-text" data-for="networksf4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Network hardware (routers, switches, firewalls)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="networksf5">
+                                    <span class="checkbox-text" data-for="networksf5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Basic network troubleshooting
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="networksf6">
+                                    <span class="checkbox-text" data-for="networksf6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Network topologies
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="networksf7">
+                                    <span class="checkbox-text" data-for="networksf7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Wireless networking
+                                    </span>
+                                </li>                                
+                            </ul>
+                            <div class="congrats-message" id="congratsMessage">🎉 Congratulations on completing a step! 🎉</div>
+                        </div>
+                        <canvas id="confettiCanvas"></canvas>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="networksp1">
+                                    <span class="checkbox-text" data-for="networksp1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/ZpFticDPEkw?si=6kRWMjOlZxkBuWXa" target="_blank">Home network setup and securing</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="networksp2">
+                                    <span class="checkbox-text" data-for="networksp2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/xuNuy8n8u-Y?si=HIJ--bCiE_GEbkWK" target="_blank">Network traffic analysis</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="networksp3">
+                                    <span class="checkbox-text" data-for="networksp3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Basic firewall configuration</a>
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📺</div>
+                                <h5>Computer Networking Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="cnfResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="cnfResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Computer Networking Fundamentals Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Computer Networking Fundamentals:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>OSI and TCP/IP Models Explained</h3>
+                            <p>This video provides a detailed comparison between the OSI and TCP/IP models, explaining each layer's function in network communication.</p>
+                            <a href="https://youtu.be/SqcY0GlETPk?si=cMsHlRhL-oRzcku2" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>IP Addressing and Subnetting Tutorial</h3>
+                            <p>This tutorial offers a comprehensive guide to IP addressing and subnetting, essential for understanding network configurations and design.</p>
+                            <a href="https://youtu.be/OqsXzkXfwRw?si=kwkFqjzibWk9yzxG" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 2: Operating Systems & Linux Skills -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">2</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Operating Systems & Linux Skills</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Linux is the backbone of many security tools and platforms. Understanding operating system security is crucial for cybersecurity professionals.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="osp1">
+                                    <span class="checkbox-text" data-for="osp1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Linux fundamentals and distributions
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="osp2">
+                                    <span class="checkbox-text" data-for="osp2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Command line interface (CLI) operations
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="osp3">
+                                    <span class="checkbox-text" data-for="osp3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        File system navigation and management
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="osp4">
+                                    <span class="checkbox-text" data-for="osp4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        User and permission management
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="osp5">
+                                    <span class="checkbox-text" data-for="osp5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Process management
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="osp6">
+                                    <span class="checkbox-text" data-for="osp6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Package management
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="osp7">
+                                    <span class="checkbox-text" data-for="osp7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Basic bash scripting
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="osp8">
+                                    <span class="checkbox-text" data-for="osp8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Windows security fundamentals
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="secProj1">
+                                    <span class="checkbox-text" data-for="secProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="https://youtu.be/hKGPH9C-EFc?si=AvTxtLI0jszyKTeA" target="_blank">Setting up a secure Linux environment</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secProj2">
+                                    <span class="checkbox-text" data-for="secProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Creating automated security scripts</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secProj3">
+                                    <span class="checkbox-text" data-for="secProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="https://youtu.be/d2hCS6T1z3k?si=h5wLPueTrt7pQzX0" target="_blank">Hardening an operating system</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📺</div>
+                                <h5>Linux Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="linuxResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="linuxResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Linux Fundamentals Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Linux Fundamentals:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/linux.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Linux Tutorial For Beginners | Linux Training | Edureka</h3>
+                            <p>This comprehensive tutorial introduces Linux fundamentals, covering various distributions, command-line operations, file system navigation, user and permission management, process management, package management, and basic bash scripting.</p>
+                            <a href="https://www.youtube.com/watch?v=bz0ZCUv5rYo" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/windows.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Beginners Guide to Windows Security</h3>
+                            <p>This video provides an introduction to the built-in security features of Windows 10, offering insights into how to utilize them effectively to enhance system protection.</p>
+                            <a href="https://www.youtube.com/watch?v=rURrvidMTCA" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 3: Programming & Scripting -->
+            <div class="roadmap-step">
+                <div class="step-number intermediate">3</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Programming & Scripting for Security</h3>
+                        <span class="step-level">Intermediate</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Coding skills are essential for automating security tasks, analyzing vulnerabilities, and developing security tools.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="secFund1">
+                                    <span class="checkbox-text" data-for="secFund1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Python fundamentals for security
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secFund2">
+                                    <span class="checkbox-text" data-for="secFund2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Bash scripting for automation
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secFund3">
+                                    <span class="checkbox-text" data-for="secFund3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      PowerShell for Windows environments
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secFund4">
+                                    <span class="checkbox-text" data-for="secFund4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Regular expressions
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secFund5">
+                                    <span class="checkbox-text" data-for="secFund5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      API interactions
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secFund6">
+                                    <span class="checkbox-text" data-for="secFund6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Basic web technologies (HTML, JavaScript)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secFund7">
+                                    <span class="checkbox-text" data-for="secFund7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Data parsing and manipulation
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="secFund8">
+                                    <span class="checkbox-text" data-for="secFund8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Security tool development
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cyberProj1">
+                                    <span class="checkbox-text" data-for="cyberProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="https://youtu.be/_sj4XSoMHyE?si=82lH0IKaCpvM6FbT" target="_blank">Security scanner automation</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cyberProj2">
+                                    <span class="checkbox-text" data-for="cyberProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Log analysis tool</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cyberProj3">
+                                    <span class="checkbox-text" data-for="cyberProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Network monitoring script</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cyberProj4">
+                                    <span class="checkbox-text" data-for="cyberProj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="https://youtu.be/_sj4XSoMHyE?si=82lH0IKaCpvM6FbT" target="_blank">Basic vulnerability scanner</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📺</div>
+                                <h5>Programming & Scripting Essentials</h5>
+                                <a href="#" class="view-button" data-modal-target="psResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="psResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Programming & Scripting Fundamentals Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Programming & Scripting Fundamentals:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/python.png' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Fundamentals of Python for Cybersecurity</h3>
+                            <p>In this course, you will be introduced to the Python programming language and apply it in a cybersecurity setting to automate tasks.</p>
+                            <a href="https://youtu.be/4pe1fn3Gus0?si=o0x0jigaMFT13FO-" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/api.jpg' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>APIs for Beginners - How to use an API</h3>
+                            <p>In this full tutorial you will learn what APIs do, why APIs exist, and the many benefits of APIs. </p>
+                            <a href="https://youtu.be/WXsD0ZgxjRw?si=W_54HRpI1KdaFRG5" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 4: Security Fundamentals -->
+            <div class="roadmap-step">
+                <div class="step-number intermediate">4</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Security Fundamentals & Ethical Hacking</h3>
+                        <span class="step-level">Intermediate</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Learn core security concepts and the ethical hacking methodology to identify system vulnerabilities.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="ethics1">
+                                    <span class="checkbox-text" data-for="ethics1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      CIA triad and security principles
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethics2">
+                                    <span class="checkbox-text" data-for="ethics2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Types of security threats
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethics3">
+                                    <span class="checkbox-text" data-for="ethics3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Vulnerability assessment
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethics4">
+                                    <span class="checkbox-text" data-for="ethics4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Ethical hacking methodology
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethics5">
+                                    <span class="checkbox-text" data-for="ethics5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Common attack vectors
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethics6">
+                                    <span class="checkbox-text" data-for="ethics6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Security tools (Nmap, Wireshark, Metasploit)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethics7">
+                                    <span class="checkbox-text" data-for="ethics7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Social engineering techniques
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethics8">
+                                    <span class="checkbox-text" data-for="ethics8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      OWASP Top 10 vulnerabilities
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethics9">
+                                    <span class="checkbox-text" data-for="ethics9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Password security
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="ethicsProj1">
+                                    <span class="checkbox-text" data-for="ethicsProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;"><a href="#">
+                                      Vulnerability assessment report
+                                    </a></span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethicsProj2">
+                                    <span class="checkbox-text" data-for="ethicsProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;"><a href="https://youtu.be/P07NH5F-t3s?si=FAEDZZdz2lCBtYJE">
+                                      Capture The Flag (CTF) exercises
+                                    </a></span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethicsProj3">
+                                    <span class="checkbox-text" data-for="ethicsProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;"><a href="https://youtu.be/izmCJlJEvQw?si=BQf6x-ZDavcUptE8">
+                                      Setting up a security lab
+                                    </a></span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="ethicsProj4">
+                                    <span class="checkbox-text" data-for="ethicsProj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;"><a href="#">
+                                      Web application security testing
+                                    </a></span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📺</div>
+                                <h5>Security Fundamentals & Ethical Hacking</h5>
+                                <a href="#" class="view-button" data-modal-target="sfehResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="sfehResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Security Fundamentals & Ethical Hacking Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Security Fundamentals & Ethical Hacking:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Full Ethical Hacking Course</h3>
+                            <p>In this course, you will be introduced to the Python programming language and apply it in a cybersecurity setting to automate tasks.</p>
+                            <a href="https://youtu.be/3Kq1MIfTWCE?si=PqcnNKI5J277_g_S" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Network Scanning Complete Course | Beginner to Advanced Nmap Course</h3>
+                            <p>This course is a comprehensive guide to network scanning, covering everything from the basics to advanced techniques.</p>
+                            <a href="https://youtu.be/27zYf9EPhWw?si=bl_a94iRsQTiVGg8" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 5: Network Security -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">5</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Network Security & Monitoring</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Learn how to secure networks, detect intrusions, and respond to security incidents effectively.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="netSec1">
+                                    <span class="checkbox-text" data-for="netSec1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Firewall configuration and management
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netSec2">
+                                    <span class="checkbox-text" data-for="netSec2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Intrusion Detection/Prevention Systems (IDS/IPS)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netSec3">
+                                    <span class="checkbox-text" data-for="netSec3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Network traffic analysis
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netSec4">
+                                    <span class="checkbox-text" data-for="netSec4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      VPN technologies
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netSec5">
+                                    <span class="checkbox-text" data-for="netSec5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Secure network design
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netSec6">
+                                    <span class="checkbox-text" data-for="netSec6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Network monitoring tools
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netSec7">
+                                    <span class="checkbox-text" data-for="netSec7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      SIEM implementation
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netSec8">
+                                    <span class="checkbox-text" data-for="netSec8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Incident response processes
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netSec9">
+                                    <span class="checkbox-text" data-for="netSec9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Security log analysis
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="netProj1">
+                                      <span class="checkbox-text" data-for="netProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;"><a href="https://youtu.be/tC53oreKfZo?si=ubs7Ojtfm4F-AFtj">
+                                        Setting up IDS/IPS solutions</a>
+                                      </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netProj2">
+                                      <span class="checkbox-text" data-for="netProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Network segmentation implementation</a>
+                                      </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netProj3">
+                                      <span class="checkbox-text" data-for="netProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;"><a href="#">
+                                        Security incident handling exercise</a>
+                                      </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="netProj4">
+                                      <span class="checkbox-text" data-for="netProj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Traffic analysis and threat hunting</a>
+                                      </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📺</div>
+                                <h5>Network Security Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="nsResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="nsResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Network Security Fundamentals Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Network Security Fundamentals:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Network Security Tutorial | Introduction to Network Security | Network Security Tools | Edureka</h3>
+                            <p>This tutorial provides an introduction to network security concepts, covering the need for network security, various tools, and fundamental concepts.</p>
+                            <a href="https://youtu.be/6Jubl1UnJTE?si=OXY2LFHo8Gcitk5K" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Log Analysis with Splunk | Edureka</h3>
+                            <p>This video will help you understand what and why do we need Log Analysis & Monitoring.</p>
+                            <a href="https://youtu.be/OBHtu285aqE?si=KAAezAQ64_91d8Eo" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 6: Web Application Security -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">6</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Web Application Security</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Master securing web applications against common attack vectors and vulnerabilities.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="webSec1">
+                                    <span class="checkbox-text" data-for="webSec1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      OWASP Top 10 in depth
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="webSec2">
+                                    <span class="checkbox-text" data-for="webSec2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      SQL injection attacks and prevention
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="webSec3">
+                                    <span class="checkbox-text" data-for="webSec3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cross-site scripting (XSS)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="webSec4">
+                                    <span class="checkbox-text" data-for="webSec4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cross-site request forgery (CSRF)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="webSec5">
+                                    <span class="checkbox-text" data-for="webSec5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Secure coding practices
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="webSec6">
+                                    <span class="checkbox-text" data-for="webSec6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Authentication and authorization
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="webSec7">
+                                    <span class="checkbox-text" data-for="webSec7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      API security
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="webSec8">
+                                    <span class="checkbox-text" data-for="webSec8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Web application firewalls (WAF)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="webSec9">
+                                    <span class="checkbox-text" data-for="webSec9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Web penetration testing tools
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="webapp1">
+                                    <span class="checkbox-text" data-for="webapp1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Webapp vulnerability assessment</a>
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="webapp2">
+                                    <span class="checkbox-text" data-for="webapp2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Building a secure web application</a>
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="webapp3">
+                                    <span class="checkbox-text" data-for="webapp3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Web app penetration testing report</a>
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="webapp4">
+                                    <span class="checkbox-text" data-for="webapp4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">API security implementation</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📺</div>
+                                <h5>Web Security Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="wapsResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="wapsResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Web Security Fundamentals Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Web Security Fundamentals:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>OWASP Top 10 Web Application Security Risks</h3>
+                            <p>This video provides a comprehensive overview of the OWASP Top 10 security risks, detailing each vulnerability and offering insights into mitigation strategies.</p>
+                            <a href="https://youtu.be/wUaeKEl1RCw?si=ye61pYrMtjQrNOLO" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Understanding SQL Injection Attacks</h3>
+                            <p> This tutorial explains SQL injection attacks, demonstrating how they occur and discussing methods to prevent them, emphasizing the importance of secure coding practices.</p>
+                            <a href="https://youtu.be/ciNHn38EyRc?si=yGHvqpXK959YSqKR" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 7: Advanced Penetration Testing -->
+            <div class="roadmap-step">
+                <div class="step-number expert">7</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Advanced Penetration Testing</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Learn advanced techniques to ethically test systems for vulnerabilities and provide remediation guidance.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="advpentest1">
+                                    <span class="checkbox-text" data-for="advpentest1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Advanced reconnaissance techniques
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest2">
+                                    <span class="checkbox-text" data-for="advpentest2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Exploit development
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest3">
+                                    <span class="checkbox-text" data-for="advpentest3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Privilege escalation
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest4">
+                                    <span class="checkbox-text" data-for="advpentest4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Post-exploitation techniques
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest5">
+                                    <span class="checkbox-text" data-for="advpentest5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Evading security controls
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest6">
+                                    <span class="checkbox-text" data-for="advpentest6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Red team operations
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest7">
+                                    <span class="checkbox-text" data-for="advpentest7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Advanced social engineering
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest8">
+                                    <span class="checkbox-text" data-for="advpentest8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Wireless network penetration
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest9">
+                                    <span class="checkbox-text" data-for="advpentest9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                    Writing professional pentest reports
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="advpentest10">
+                                    <span class="checkbox-text" data-for="advpentest10" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Full-scope penetration test</a>
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest11">
+                                    <span class="checkbox-text" data-for="advpentest11" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Red team exercise</a>
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest12">
+                                    <span class="checkbox-text" data-for="advpentest12" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Custom exploit development</a>
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="advpentest13">
+                                    <span class="checkbox-text" data-for="advpentest13" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Physical security assessment</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📺</div>
+                                <h5>Advanced Penetration Testing</h5>
+                                <a href="#" class="view-button" data-modal-target="aptResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="aptResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Advanced Penetration Testing Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Advanced Penetration Testing:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Advanced Penetration Testing</h3>
+                            <p>HackerSploit is the leading provider of free Infosec and cybersecurity training. Their goal is to make cybersecurity training more effective and accessible to students and professionals.</p>
+                            <a href="https://www.youtube.com/c/HackerSploit" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 8: Security Specializations -->
+            <div class="roadmap-step">
+                <div class="step-number expert">8</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Security Specializations</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Specialize in high-demand cybersecurity domains to advance your career and expertise.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cloudsec1">
+                                    <span class="checkbox-text" data-for="cloudsec1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Cloud security (AWS, Azure, GCP)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cloudsec2">
+                                    <span class="checkbox-text" data-for="cloudsec2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Mobile application security
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cloudsec3">
+                                    <span class="checkbox-text" data-for="cloudsec3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        IoT security
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cloudsec4">
+                                    <span class="checkbox-text" data-for="cloudsec4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Container security
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cloudsec5">
+                                    <span class="checkbox-text" data-for="cloudsec5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        DevSecOps principles
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cloudsec6">
+                                    <span class="checkbox-text" data-for="cloudsec6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Malware analysis
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cloudsec7">
+                                    <span class="checkbox-text" data-for="cloudsec7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Digital forensics
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cloudsec8">
+                                    <span class="checkbox-text" data-for="cloudsec8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Threat intelligence
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cloudsec9">
+                                    <span class="checkbox-text" data-for="cloudsec9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Security architecture
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="proj-cloud-security">
+                                    <span class="checkbox-text" data-for="proj-cloud-security" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Cloud security assessment</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="proj-secure-devops">
+                                    <span class="checkbox-text" data-for="proj-secure-devops" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Secure DevOps pipeline</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="proj-forensics">
+                                    <span class="checkbox-text" data-for="proj-forensics" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Forensic investigation</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="proj-threat-intel">
+                                    <span class="checkbox-text" data-for="proj-threat-intel" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Threat intelligence platform setup</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📺</div>
+                                <h5>Security Specializations essentials</h5>
+                                <a href="#" class="view-button" data-modal-target="csResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div id="csResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Security Specializations Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Security Specializations:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>What Is DevSecOps? | Simplilearn</h3>
+                            <p>This concise tutorial provides explanation on how to integrate security practices into the DevOps process to ensure the development of secure applications.</p>
+                            <a href="https://youtu.be/M83GbncGlXs?si=fowDimAPlJ-eb7oO" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cybersec-circle.webp' %}" alt="cybersec">
+                        <div class="popup-card-content">
+                            <h3>Cloud Security Basics: AWS, Azure, and GCP</h3>
+                            <p>This tutorial offers an overview of cloud security fundamentals across major platforms like AWS, Azure, and Google Cloud Platform.</p>
+                            <a href="https://youtu.be/Vnk0p-63mHQ?si=sLVdO_fadjbMRJ6P" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+    </section>
+
+    <!-- Career Paths -->
+    <section class="career-paths, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Cybersecurity Career Paths</h2>
+            </div>
+            <div class="career-grid">
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🔐</div>
+                    <h3>Security Analyst</h3>
+                    <ul>
+                        <li>Monitor systems for security incidents and respond to threats.</li>
+                        <li><strong>Industries Hiring:</strong> Finance, Healthcare, Government, Technology and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🕵️</div>
+                    <h3>Penetration Tester</h3>
+                    <ul>
+                        <li>Ethically hack systems to identify and report vulnerabilities.</li>
+                        <li><strong>Industries Hiring:</strong> Cybersecurity Firms, Banking, E-commerce, Defense and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🛡️</div>
+                    <h3>Security Engineer</h3>
+                    <ul>
+                        <li>Design and implement security solutions to protect organizations.</li>
+                        <li><strong>Industries Hiring:</strong> IT Services, Cloud Providers, Retail, Telecommunications and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">👨‍💼</div>
+                    <h3>CISO (Chief Information Security Officer)</h3>
+                    <ul>
+                        <li>Lead organizational security strategy and programs.</li>
+                        <li><strong>Industries Hiring:</strong> Enterprise Corporations, Government Agencies, Healthcare, Financial Services and many more!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Chatbot UI -->
+    <div id="chatbot-button">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chatbot-box" class="hidden">
+        <div id="chat-header">Ask UpSkillX Bot <span id="chat-close">&times;</span></div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something...">
+            <button id="send-chat"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    {% comment %} <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Cybersecurity Journey?</h2>
+                <p>Join thousands of students who have successfully followed our roadmap to become cybersecurity professionals.</p>
+                <a href="#" class="btn btn-primary">SIGN UP NOW</a>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+    <!-- JavaScript for Popup Modals -->
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'darkmodescript.js' %}"></script>
+    <script src="{% static 'progress.js' %}"></script>
+    <script src="{% static 'chatbot.js' %}"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Tools and Software</title>
+    <link rel="stylesheet" href="{% static 'rts.css' %}">
+    <link href="{% static 'darkmode.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'chatbot.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Recommended Tools and Software</h1>
+            <p>A curated collection of the best tools and software for various domains</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <div>
+                <button onclick="window.history.back();"class="back-button"><i class="fas fa-arrow-left"></i> Back</button>
+            </div>
+            <ul>
+                <li><a href="#web-development">Web Development</a></li>
+                <li><a href="#data-science">Data Science</a></li>
+                <li><a href="#mobile-development">Mobile Development</a></li>
+                <li><a href="#ai-ml">AI/ML</a></li>
+                <li><a href="#cyber-security">Cyber Security</a></li>
+                <li><a href="#cloud-computing">Cloud Computing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="web-development" class="domain-section">
+            <div class="section-header">
+                <img src="{% static 'images/webdev-circle.webp' %}" alt="Web Development" class="domain-icon">
+                <div>
+                    <h2>Web Development</h2>
+                    <p>Essential tools and frameworks for modern web development</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="{% static 'images/vscode.webp' %}" alt="VS Code">
+                    <h3>VS Code</h3>
+                    <p>A lightweight but powerful source code editor with support for various programming languages and development tasks.</p>
+                    <a href="https://code.visualstudio.com/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/react.webp' %}" alt="React">
+                    <h3>React</h3>
+                    <p>A JavaScript library for building user interfaces, maintained by Facebook and a community of developers.</p>
+                    <a href="https://reactjs.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/nodejs.webp' %}" alt="Node.js">
+                    <h3>Node.js</h3>
+                    <p>A JavaScript runtime built on Chrome's V8 JavaScript engine, designed for building scalable network applications.</p>
+                    <a href="https://nodejs.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/tailwindcss.webp' %}" alt="Tailwind CSS">
+                    <h3>Tailwind CSS</h3>
+                    <p>A utility-first CSS framework for rapidly building custom user interfaces without leaving your HTML.</p>
+                    <a href="https://tailwindcss.com/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="data-science" class="domain-section">
+            <div class="section-header">
+                <img src="{% static 'images/datascience-circle.webp' %}" alt="Data Science" class="domain-icon">
+                <div>
+                    <h2>Data Science</h2>
+                    <p>Tools and libraries for data analysis, visualization, and modeling</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="{% static 'images/python.png' %}" alt="Python">
+                    <h3>Python</h3>
+                    <p>A versatile programming language with a rich ecosystem of libraries for data science and machine learning.</p>
+                    <a href="https://www.python.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/jupyter.jpg' %}" alt="Jupyter Notebook">
+                    <h3>Jupyter Notebook</h3>
+                    <p>An open-source web application that allows you to create and share documents with live code, equations, and visualizations.</p>
+                    <a href="https://jupyter.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/pandas.png' %}" alt="Pandas">
+                    <h3>Pandas</h3>
+                    <p>A fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool built on Python.</p>
+                    <a href="https://pandas.pydata.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/tableau.jpg' %}" alt="Tableau">
+                    <h3>Tableau</h3>
+                    <p>A visual analytics platform that helps people see and understand their data through interactive visualizations.</p>
+                    <a href="https://www.tableau.com/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile-development" class="domain-section">
+            <div class="section-header">
+                <img src="{% static 'images/mobiledev-circle.png' %}" alt="Mobile Development" class="domain-icon">
+                <div>
+                    <h2>Mobile Development</h2>
+                    <p>Frameworks and tools for building mobile applications across platforms</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="{% static 'images/flutter.png' %}" alt="Flutter">
+                    <h3>Flutter</h3>
+                    <p>Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.</p>
+                    <a href="https://flutter.dev/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/react.webp' %}" alt="React Native">
+                    <h3>React Native</h3>
+                    <p>A framework for building native mobile apps using React, allowing cross-platform development with JavaScript.</p>
+                    <a href="https://reactnative.dev/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/xcode.jpeg' %}" alt="Xcode">
+                    <h3>Xcode</h3>
+                    <p>Apple's integrated development environment for macOS, used to develop software for iOS, iPadOS, and more.</p>
+                    <a href="https://developer.apple.com/xcode/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/android.png' %}" alt="Android Studio">
+                    <h3>Android Studio</h3>
+                    <p>The official integrated development environment for Google's Android operating system.</p>
+                    <a href="https://developer.android.com/studio" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-ml" class="domain-section">
+            <div class="section-header">
+                <img src="{% static 'images/aiml-circle.webp' %}" alt="AI/ML" class="domain-icon">
+                <div>
+                    <h2>AI/ML</h2>
+                    <p>Frameworks and tools for artificial intelligence and machine learning</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="{% static 'images/tenserflow.webp' %}" alt="TensorFlow">
+                    <h3>TensorFlow</h3>
+                    <p>An end-to-end open-source platform for machine learning, developed by Google.</p>
+                    <a href="https://www.tensorflow.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/pytorch.webp' %}" alt="PyTorch">
+                    <h3>PyTorch</h3>
+                    <p>An open-source machine learning library developed by Facebook's AI Research lab.</p>
+                    <a href="https://pytorch.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/scikit.png' %}" alt="scikit-learn">
+                    <h3>scikit-learn</h3>
+                    <p>A simple and efficient tool for data mining and data analysis built on NumPy, SciPy, and Matplotlib.</p>
+                    <a href="https://scikit-learn.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/hugface.png' %}" alt="Hugging Face">
+                    <h3>Hugging Face</h3>
+                    <p>A platform providing state-of-the-art NLP models and tools to build, train and deploy them.</p>
+                    <a href="https://huggingface.co/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cyber-security" class="domain-section">
+            <div class="section-header">
+                <img src="{% static 'images/cybersec-circle.webp' %}" alt="Cyber Security" class="domain-icon">
+                <div>
+                    <h2>Cyber Security</h2>
+                    <p>Tools and software for network security, penetration testing, and vulnerability assessment</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="{% static 'images/wireshark.png' %}" alt="Wireshark">
+                    <h3>Wireshark</h3>
+                    <p>A free and open-source packet analyzer used for network troubleshooting and analysis.</p>
+                    <a href="https://www.wireshark.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/metasploit.png' %}" alt="Metasploit">
+                    <h3>Metasploit</h3>
+                    <p>A penetration testing framework that makes discovering and exploiting vulnerabilities easier.</p>
+                    <a href="https://www.metasploit.com/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/nmap.webp' %}" alt="Nmap">
+                    <h3>Nmap</h3>
+                    <p>A free and open-source network scanner used to discover hosts and services on a computer network.</p>
+                    <a href="https://nmap.org/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/burpsuite.png' %}" alt="Burp Suite">
+                    <h3>Burp Suite</h3>
+                    <p>An integrated platform for performing security testing of web applications.</p>
+                    <a href="https://portswigger.net/burp" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cloud-computing" class="domain-section">
+            <div class="section-header">
+                <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Cloud Computing" class="domain-icon">
+                <div>
+                    <h2>Cloud Computing</h2>
+                    <p>Platforms and services for deploying, managing, and scaling applications in the cloud</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="{% static 'images/aws.jpg' %}" alt="AWS">
+                    <h3>AWS</h3>
+                    <p>Amazon Web Services, a comprehensive cloud platform offering over 200 fully featured services.</p>
+                    <a href="https://aws.amazon.com/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/azure.webp' %}" alt="Microsoft Azure">
+                    <h3>Microsoft Azure</h3>
+                    <p>Microsoft's cloud computing service for building, testing, deploying, and managing applications.</p>
+                    <a href="https://azure.microsoft.com/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/gcloud.png' %}" alt="Google Cloud">
+                    <h3>Google Cloud</h3>
+                    <p>Google Cloud Platform, offering a suite of cloud computing services for computing, storage, and application development.</p>
+                    <a href="https://cloud.google.com/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="tool-card">
+                    <img src="{% static 'images/docker.jpg' %}" alt="Docker">
+                    <h3>Docker</h3>
+                    <p>A platform for developing, shipping, and running applications in containers.</p>
+                    <a href="https://www.docker.com/" class="tool-link" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-button">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chatbot-box" class="hidden">
+        <div id="chat-header">Ask UpSkillX Bot <span id="chat-close">&times;</span></div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something...">
+            <button id="send-chat"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Recommended Tools and Software. All tools and software mentioned are trademarks of their respective owners.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'darkmodescript.js' %}"></script>
+    <script src="{% static 'chatbot.js' %}"></script>
+
+</body>
+</html>

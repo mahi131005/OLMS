@@ -1,0 +1,95 @@
+/* Pop-up Styles */
+.facts-card {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.facts-card-content {
+    background: #4361ee;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.facts-card-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.facts-card-content p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.feedback-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.feedback-btn {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.feedback-btn:hover {
+    transform: scale(1.2);
+}
+
+#thumbs-up.active i {
+    color: red;
+}
+
+#thumbs-down.active i {
+    color: black;
+}
+
+.close-btn {
+    background: #ff4757;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.close-btn:hover {
+    background: #ff6b81;
+}
+
+/* Blur Effect for Background */
+body.blur-background {
+    overflow: hidden;
+}
+
+body.blur-background::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}

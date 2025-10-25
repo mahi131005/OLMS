@@ -1,0 +1,1000 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Roadmap - EduLearn</title>
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="{% static 'domainstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'popupstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'darkmode.css' %}" rel="stylesheet">
+    <link href="{% static 'chatbot.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    {% include 'header.html' %}
+
+    <!-- Hero Section -->
+    <section class="webdev-hero">
+        <div class="container">
+            <div class="webdev-hero-content">
+                <h1>Data Science Roadmap</h1>
+                <p>Master the skills needed to become a data scientist with our comprehensive learning path. From Python basics to advanced visualization tools, we've got you covered.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Introduction -->
+    <section class="roadmap-intro, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Your Journey to Becoming a Data Scientist</h2>
+                <p>Follow this roadmap to go from complete beginner to professional data scientist. Each stage builds upon the previous one, giving you a solid foundation in data analysis and visualization.</p>
+            </div>
+            <div class="roadmap-overview">
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon beginner">
+                        <span>1</span>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Learn the fundamentals</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon intermediate">
+                        <span>2</span>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>Master data manipulation</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon advanced">
+                        <span>3</span>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>Data visualization expertise</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon expert">
+                        <span>4</span>
+                    </div>
+                    <h3>Expert</h3>
+                    <p>Complete data science workflow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Steps -->
+    <section class="roadmap-steps">
+        <div class="container">
+            <!-- Step 1: Python -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">1</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Python - Programming Fundamentals</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Python is the most popular programming language for data science. It provides powerful libraries and a clean syntax ideal for data analysis.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="py1">
+                                    <span class="checkbox-text" data-for="py1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Python syntax and data types
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="py2">
+                                    <span class="checkbox-text" data-for="py2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Variables, operators, and functions
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="py3">
+                                    <span class="checkbox-text" data-for="py3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Control flow (conditionals and loops)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="py4">
+                                    <span class="checkbox-text" data-for="py4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Lists, dictionaries, and sets
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="py5">
+                                    <span class="checkbox-text" data-for="py5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        File handling and I/O operations
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="py6">
+                                    <span class="checkbox-text" data-for="py6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Error handling and debugging
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="py7">
+                                    <span class="checkbox-text" data-for="py7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Object-oriented programming
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="py8">
+                                    <span class="checkbox-text" data-for="py8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Libraries: NumPy and Pandas basics
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pyproject1">
+                                    <span class="checkbox-text" data-for="pyproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/bDhvCp3_lYw?si=0lmVxLpstOd1883_" target="_blank">Data cleaning script</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyproject2">
+                                    <span class="checkbox-text" data-for="pyproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/KgCgpCIOkIs?si=ED7VT3E_sOVbwuB6" target="_blank">Basic data analysis tool</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyproject3">
+                                    <span class="checkbox-text" data-for="pyproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/q5uM4VKywbA?si=LexjSvbT3mmqzpC7" target="_blank">CSV file processor</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                            <div class="congrats-message" id="congratsMessage">🎉 Congratulations on completing a step! 🎉</div>
+                        </div>
+                        <canvas id="confettiCanvas"></canvas>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Python for Data Science</h5>
+                                <a href="#" class="view-button" data-modal-target="pythonResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pythonResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Python Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Python:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/python.png' %}" alt="python">
+                        <div class="popup-card-content">
+                            <h3>Python for Data Science - Course for Beginners</h3>
+                            <p>This beginner-friendly course covers essential Python libraries such as Pandas, NumPy, and Matplotlib.</p>
+                            <a href="https://youtu.be/yGN28LY5VuA" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/python.png' %}" alt="python">
+                        <div class="popup-card-content">
+                            <h3>Python Machine Learning Tutorial (Data Science)</h3>
+                            <p>This tutorial introduces machine learning concepts using Python, guiding you through practical examples and applications in data science.</p>
+                            <a href="https://youtu.be/7eh4d6sabA0" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/python.png' %}" alt="python">
+                        <div class="popup-card-content">
+                            <h3>Introduction to Data Science with Python</h3>
+                            <p>This video offers an introduction to data science using Python, focusing on practical applications and foundational concepts.</p>
+                            <a href="https://youtu.be/KO8kikS6iAY" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: SQL -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">2</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>SQL - Database Querying</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">SQL (Structured Query Language) is essential for working with databases and extracting insights from structured data.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="db1">
+                                    <span class="checkbox-text" data-for="db1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Database fundamentals
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="db2">
+                                    <span class="checkbox-text" data-for="db2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Basic SQL queries (SELECT, FROM, WHERE)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="db3">
+                                    <span class="checkbox-text" data-for="db3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Filtering and sorting data
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="db4">
+                                    <span class="checkbox-text" data-for="db4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Aggregate functions (COUNT, SUM, AVG)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="db5">
+                                    <span class="checkbox-text" data-for="db5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Joins and relationships
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="db6">
+                                    <span class="checkbox-text" data-for="db6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Subqueries and CTEs
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="db7">
+                                    <span class="checkbox-text" data-for="db7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Database design basics
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="db8">
+                                    <span class="checkbox-text" data-for="db8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Performance optimization
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="dbproject1">
+                                    <span class="checkbox-text" data-for="dbproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/l8DCPaHc5TQ?si=CC-NuRyeFB4K7KoM" target="_blank">Data exploration queries</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dbproject2">
+                                    <span class="checkbox-text" data-for="dbproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/Qr1Go2gP8fo?si=kCymNlz4i49OIdjr" target="_blank">Sales data analysis</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dbproject3">
+                                    <span class="checkbox-text" data-for="dbproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/TGFE055-03Y?si=pzpNndwmFNpy3NZp" target="_blank">Database schema design</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>SQL for Data Analysis</h5>
+                                <a href="#" class="view-button" data-modal-target="sqlResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% comment %} popup for sql {% endcomment %}
+            <div id="sqlResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>SQL Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn SQL:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/sql.jpg' %}" alt="sql">
+                        <div class="popup-card-content">
+                            <h3>SQL for Data Analytics</h3>
+                            <p>This video offers an in-depth look at SQL for data analytics, covering essential concepts and practical applications.</p>
+                            <a href="https://youtu.be/7mz73uXD9DA?si=TPRaEeXu-_glBsja" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/sql.jpg' %}" alt="sql">
+                        <div class="popup-card-content">
+                            <h3>Learn SQL for Data Analysis</h3>
+                            <p>This tutorial provides a concise introduction to SQL for data analysis, complete with a sample dataset and 50 queries.</p>
+                            <a href="https://youtu.be/l8DCPaHc5TQ?si=g4dphhT23zE9heGO" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/sql.jpg' %}" alt="sql">
+                        <div class="popup-card-content">
+                            <h3>SQL Tutorial for Beginners | SQL Crash Course</h3>
+                            <p>This crash course is designed for beginners, focusing on SQL's role in data science and practical query examples.</p>
+                            <a href="https://www.youtube.com/live/2kHV2_CXJ38?si=Mf0GzZMCRu7gQtMM" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: R -->
+            <div class="roadmap-step">
+                <div class="step-number intermediate">3</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>R - Statistical Computing</h3>
+                        <span class="step-level">Intermediate</span>
+                    </div>
+                    <p class="step-description, step-description-dark">R is a programming language specifically designed for statistical analysis and data visualization, popular in academic and research settings.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="r1">
+                                    <span class="checkbox-text" data-for="r1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        R syntax and data structures
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="r2">
+                                    <span class="checkbox-text" data-for="r2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Data manipulation with dplyr
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="r3">
+                                    <span class="checkbox-text" data-for="r3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Data visualization with ggplot2
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="r4">
+                                    <span class="checkbox-text" data-for="r4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Statistical analysis techniques
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="r5">
+                                    <span class="checkbox-text" data-for="r5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Hypothesis testing
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="r6">
+                                    <span class="checkbox-text" data-for="r6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Regression analysis
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="r7">
+                                    <span class="checkbox-text" data-for="r7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Time series analysis
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="r8">
+                                    <span class="checkbox-text" data-for="r8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        R markdown for reports
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="rproject1">
+                                    <span class="checkbox-text" data-for="rproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/D_CNmYkGRUc?si=Ux5HlYpj7CDp-iP0" target="_blank">Statistical analysis report</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="rproject2">
+                                    <span class="checkbox-text" data-for="rproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/_a4S4tq62OE?si=ctwOo0srl3UotoqQ" target="_blank">Data visualization dashboard</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="rproject3">
+                                    <span class="checkbox-text" data-for="rproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/sV5lwAJ7vnQ?si=j6XUI6LwbpOQHPvZ" target="_blank">Data Cleaning using R</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="rproject4">
+                                    <span class="checkbox-text" data-for="rproject4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/9uFQECk30kA?si=FaWmk0br8EecMYKK" target="_blank">Shiny R for web-apps</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>R for Data Science</h5>
+                                <a href="#" class="view-button" data-modal-target="rResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>R Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn R:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/r.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>R Programming Tutorial</h3>
+                            <p>This tutorial offers a hands-on overview of the R programming language, focusing on its applications in statistical computing and data analysis.</p>
+                            <a href="https://www.youtube.com/watch?v=_V8eKsto3Ug" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/r.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>R for Data Science Full Course</h3>
+                            <p>This full-length course delves into using R for data science, covering essential topics such as data manipulation, visualization, and statistical modeling.</p>
+                            <a href="https://www.youtube.com/watch?v=ckdHNu4kfL0" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/r.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>R Programming for Data Science | MarinStatsLectures</h3>
+                            <p>This playlist provides a series of tutorials on R programming tailored for data science applications, offering in-depth explanations and practical examples.</p>
+                            <a href="https://youtube.com/playlist?list=PLqzoL9-eJTNDw71zWePXyHx3_cm_fMP8S&si=qtTCuZxhKVNwWbI9" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Step 4: Tableau -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">4</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Tableau - Data Visualization</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Tableau is a powerful data visualization tool that allows you to create interactive dashboards and visual analytics without extensive coding.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="tableau1">
+                                    <span class="checkbox-text" data-for="tableau1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Connecting to data sources
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableau2">
+                                    <span class="checkbox-text" data-for="tableau2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Creating basic visualizations
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableau3">
+                                    <span class="checkbox-text" data-for="tableau3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Building interactive dashboards
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableau4">
+                                    <span class="checkbox-text" data-for="tableau4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Calculated fields and parameters
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableau5">
+                                    <span class="checkbox-text" data-for="tableau5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Maps and geospatial analysis
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableau6">
+                                    <span class="checkbox-text" data-for="tableau6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Advanced charts and graphs
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableau7">
+                                    <span class="checkbox-text" data-for="tableau7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Dashboard actions and filters
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableau8">
+                                    <span class="checkbox-text" data-for="tableau8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Tableau Server and sharing
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="tableauProj1">
+                                    <span class="checkbox-text" data-for="tableauProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/dahrmqT5GD4?si=XBBhVRfrOWaTK4os" target="_blank">Sales performance dashboard</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableauProj2">
+                                    <span class="checkbox-text" data-for="tableauProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/jWHJc5gGMnk?si=j782idXGQnF_sO8g" target="_blank">Customer segmentation analysis</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableauProj3">
+                                    <span class="checkbox-text" data-for="tableauProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/MT-HlqUHLFU?si=rkJj-W9MfqPYa0pA" target="_blank">Geographic data visualization</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tableauProj4">
+                                    <span class="checkbox-text" data-for="tableauProj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/oAIubTqg-Kw?si=hXJOnOv6CGxh7kEu" target="_blank">HR Dashboard</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Tableau Masterclass</h5>
+                                <a href="#" class="view-button" data-modal-target="tableauResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tableauResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Tableau Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Tableau:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/tableau.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Tableau Data Visualization Full Course Tutorial</h3>
+                            <p>This extensive course offers in-depth coverage of Tableau's data visualization capabilities, guiding you from basic to advanced techniques.</p>
+                            <a href="https://www.youtube.com/watch?v=DQqot_7Ctus" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/tableau.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Tableau Ultimate Full Course for Beginners</h3>
+                            <p>This comprehensive 21-hour tutorial is designed for beginners, covering all aspects of Tableau to help you become proficient in data visualization.</p>
+                            <a href="https://www.youtube.com/watch?v=K3pXnbniUcM" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/tableau.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Learn Tableau </h3>
+                            <p>This concise tutorial aims to teach you the fundamentals of Tableau in under two hours, making it ideal for those seeking a quick yet thorough introduction.</p>
+                            <a href="https://www.youtube.com/watch?v=j8FSP8XuFyk" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Power BI -->
+            <div class="roadmap-step">
+                <div class="step-number expert">5</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Power BI - Business Intelligence</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Power BI is Microsoft's business analytics service that provides interactive visualizations with self-service business intelligence capabilities.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="powerbi1">
+                                    <span class="checkbox-text" data-for="powerbi1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Power BI Desktop fundamentals
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbi2">
+                                    <span class="checkbox-text" data-for="powerbi2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Data modeling and relationships
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbi3">
+                                    <span class="checkbox-text" data-for="powerbi3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        DAX formulas and calculations
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbi4">
+                                    <span class="checkbox-text" data-for="powerbi4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Creating reports and dashboards
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbi5">
+                                    <span class="checkbox-text" data-for="powerbi5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Power Query for data transformation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbi6">
+                                    <span class="checkbox-text" data-for="powerbi6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Custom visuals and formatting
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbi7">
+                                    <span class="checkbox-text" data-for="powerbi7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Power BI Service and sharing
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbi8">
+                                    <span class="checkbox-text" data-for="powerbi8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Gateway setup and data refresh
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbi9">
+                                    <span class="checkbox-text" data-for="powerbi9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Row-level security and permissions
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="powerbiproj1">
+                                    <span class="checkbox-text" data-for="powerbiproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/i3AR0gt9SHA?si=JIIzofk5cvktdX0U" target="_blank">Executive KPI dashboard</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbiproj2">
+                                    <span class="checkbox-text" data-for="powerbiproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/J4317R5BvsA?si=eT10PXT0KVIL5TzH" target="_blank">Financial analysis report</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbiproj3">
+                                    <span class="checkbox-text" data-for="powerbiproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/JL0XcXd7kS8?si=7ci_bd86cV97nLa2" target="_blank">Supply chain visualization</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="powerbiproj4">
+                                    <span class="checkbox-text" data-for="powerbiproj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/Arv7Ptunnbc?si=RZDdG3ZMKVG-esZY" target="_blank">Marketing campaign analysis</a>
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Power BI Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="powerbiResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="powerbiResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Power BI Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Power BI:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/powerbi.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Power BI Full Course Tutorial</h3>
+                            <p>This extensive course offers in-depth coverage of Power BI, guiding you from basic to advanced techniques in data analysis and visualization.</p>
+                            <a href="https://www.youtube.com/watch?v=e6QD8lP-m6E" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/powerbi.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>ULTIMATE Power BI Tutorial Beginner to Pro Course</h3>
+                            <p>This comprehensive tutorial is designed to take you from a beginner to a pro in Power BI, covering all aspects of the tool to enhance your data analysis skills.</p>
+                            <a href="https://www.youtube.com/watch?v=Dk25lwdTKow" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/powerbi.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Learn Power BI in Under 3 Hours</h3>
+                            <p>This concise tutorial aims to teach you the fundamentals of Power BI in under three hours, making it ideal for those seeking a quick yet thorough introduction.</p>
+                            <a href="https://www.youtube.com/watch?v=I0vQ_VLZTWg" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6: Data Science Projects -->
+            <div class="roadmap-step">
+                <div class="step-number expert">6</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Data Science Projects - Bringing It All Together</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Complete data science projects that combine all the skills you've learned to solve real-world problems and build your portfolio.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="ds1">
+                                    <span class="checkbox-text" data-for="ds1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        End-to-end data science workflow
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ds2">
+                                    <span class="checkbox-text" data-for="ds2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Problem formulation and scoping
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ds3">
+                                    <span class="checkbox-text" data-for="ds3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Data collection and preparation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ds4">
+                                    <span class="checkbox-text" data-for="ds4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Exploratory data analysis
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ds5">
+                                    <span class="checkbox-text" data-for="ds5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Feature engineering
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ds6">
+                                    <span class="checkbox-text" data-for="ds6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Model selection and evaluation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ds7">
+                                    <span class="checkbox-text" data-for="ds7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Storytelling with data
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ds8">
+                                    <span class="checkbox-text" data-for="ds8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Presenting findings to stakeholders
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="dsproj1">
+                                    <span class="checkbox-text" data-for="dsproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/QFDslca5AX8?si=e39z8Q7Mb2wnneV2" target="_blank">Predictive customer churn analysis</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dsproj2">
+                                    <span class="checkbox-text" data-for="dsproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/4QIWJVVWJdQ?si=MPfbeouQmtUeHl4D" target="_blank">Market basket analysis</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dsproj3">
+                                    <span class="checkbox-text" data-for="dsproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/QpzMWQvxXWk?si=5e10JjMT-AvGc5S9" target="_blank">Sentiment Analysis</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dsproj4">
+                                    <span class="checkbox-text" data-for="dsproj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/Ib4sLduEhTs?si=ILMoAmTogAWpk_en" target="_blank">Time series forecasting system</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Data Science Project Portfolio</h5>
+                                <a href="#" class="view-button" data-modal-target="dsResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dsResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Data Science Projects Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Data Science Projects:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/datascience-circle.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>How to Create Your First Data Science Project</h3>
+                            <p>This tutorial guides you through creating and sharing your first data science project, making it ideal for beginners.</p>
+                            <a href="https://www.youtube.com/watch?v=WXy10mi7Akc" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/datascience-circle.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Beginner Kaggle Data Science Project Walk-Through</h3>
+                            <p>This video offers a step-by-step walkthrough of a beginner-level data science project on Kaggle, focusing on housing prices.</p>
+                            <a href="https://www.youtube.com/watch?v=NQQ3DRdXAXE" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/datascience-circle.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>End-to-End Data Science Projects with Python</h3>
+                            <p>This playlist explores various topics in data science and machine learning through hands-on projects using Python.</p>
+                            <a href="https://youtube.com/playlist?list=PLTsu3dft3CWg69zbIVUQtFSRx_UV80OOg&si=W4tpnm9Tj9kpLfzh" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Career Paths -->
+    <section class="career-paths, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Data Science Career Paths</h2>
+            </div>
+            <div class="career-grid">
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">📊</div>
+                    <h3>Data Analyst</h3>
+                    <ul>
+                        <li>Focus on transforming and analyzing data to support business decisions.</li>
+                        <li><strong>Industries Hiring:</strong> Finance, Healthcare, Retail, Marketing and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🧪</div>
+                    <h3>Data Scientist</h3>
+                    <ul>
+                        <li>Design data modeling processes and create predictive models.</li>
+                        <li><strong>Industries Hiring:</strong> Tech Companies, Healthcare, Government, E-Commerce and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">📈</div>
+                    <h3>Business Intelligence Analyst</h3>
+                    <ul>
+                        <li>Create visualizations and dashboards to support strategic decisions.</li>
+                        <li><strong>Industries Hiring:</strong> Finance, Consulting, Retail, Manufacturing and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🔍</div>
+                    <h3>Research Scientist</h3>
+                    <ul>
+                        <li>Apply statistical methods to solve complex research problems.</li>
+                        <li><strong>Industries Hiring:</strong> Academia, Pharmaceuticals, AI Research, Government and many more!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-button">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chatbot-box" class="hidden">
+        <div id="chat-header">Ask UpSkillX Bot <span id="chat-close">&times;</span></div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something...">
+            <button id="send-chat"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    {% comment %} <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Data Science Journey?</h2>
+                <p>Join thousands of students who have successfully followed our roadmap to become professional data scientists.</p>
+                <a href="#" class="btn btn-primary">SIGN UP NOW</a>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+    <!-- Scripts -->
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'darkmodescript.js' %}"></script>
+    <script src="{% static 'progress.js' %}"></script>
+    <script src="{% static 'chatbot.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>

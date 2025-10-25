@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpSkillX - Online Learning Platform</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'sidebar.css' %}">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- FontAwesome for Sidebar Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>UpSkillX</h1>
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="{% url 'index' %}" class="active">Home</a></li>
+                    <li><a href="{% url 'webdev' %}">Web Development</a></li>
+                    <li><a href="{% url 'datascience' %}">Data Science</a></li>
+                    <li><a href="{% url 'mobiledev' %}">Mobile Development</a></li>
+                    <li><a href="{% url 'aiml' %}">AI & Machine Learning</a></li>
+                    <li><a href="{% url 'cybersec' %}">Cybersecurity</a></li>
+                    <li><a href="{% url 'cloudcomp' %}">Cloud Computing</a></li>
+                    <li><a href="{% url 'logout' %}"><button type="button" class="logout-button">LOGOUT</button></a></li>
+
+                    <!-- Dark Mode Toggle (Now inside <li>) -->
+                    <li>
+                        <label for="dark-mode-toggle">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <i id="toggle-icon" class="bi bi-moon-fill"></i>
+                        </label>
+                    </li>                 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar-container">
+        <aside class="sidebar" aria-label="Sidebar Navigation">
+            <a href="{% url 'rts' %}" class="sidebar-item">
+            <i class="fas fa-tools"></i>
+            <span class="tooltip">Recommended Tools and Software</span>
+            </a>
+            <a href="{% url 'ccl' %}" class="sidebar-item">
+            <i class="fas fa-certificate"></i>
+            <span class="tooltip">Certification and Course Links</span>
+            </a>
+            <a href="{% url 'csqr' %}" class="sidebar-item">
+            <i class="fas fa-file-alt"></i>
+            <span class="tooltip">Cheat Sheets and Quick References</span>
+            </a>
+        </aside>
+    </div>
+</body>
+</html>

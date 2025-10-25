@@ -1,0 +1,122 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <title>Feedback</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --primary-dark: #3a56d4;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f8fb;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .thank-you-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .thank-you-container:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            color: #4361ee;
+            margin-bottom: 20px;
+            font-size: 28px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #4361ee;
+        }
+        
+        p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .return-button {
+            background-color: #4361ee;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .return-button:hover {
+            background-color: #3a56d4;
+            transform: translateY(-2px);
+        }
+        
+        .check-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #e6edfd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .check-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: none;
+            stroke: #4361ee;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="check-icon">
+            <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        </div>
+        <h2>Thank you for your feedback!</h2>
+        <p>We appreciate your time and effort in helping us improve our Learning Management System. Your input is valuable and will be used to enhance the user experience.</p>
+        <a href="{% url 'index' %}" class="return-button">Return to Home</a>
+    </div>
+</body>
+</html>

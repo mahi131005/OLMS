@@ -1,0 +1,130 @@
+.view-button {
+    display: inline-block;
+    color: #4b6bfb;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.popup-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.popup-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.popup-card img {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.popup-card-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.popup-card-content p {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.popup-card-content a {
+    color: #4b6bfb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.dark-mode .modal-content {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .close {
+    color: #bbb;
+}
+
+.dark-mode .close:hover {
+    color: #fff;
+}
+
+/* Popup card dark mode */
+.dark-mode .popup-card {
+    background-color: #242121;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .popup-card:hover {
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Adjust text and links */
+.dark-mode .popup-card-content h3 {
+    color: #f1f1f1;
+}
+
+.dark-mode .popup-card-content p {
+    color: #ccc;
+}
+
+.dark-mode .popup-card-content a {
+    color: #8ab4f8;
+}
+
+.dark-mode .standard {
+    color: #e0e0e0;
+}

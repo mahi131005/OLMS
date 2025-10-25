@@ -1,0 +1,448 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpSkillX</title>
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <style>
+        :root {
+            --primary-color:rgb(8, 102, 152);
+            --primary-dark: rgb(8, 102, 152);
+            --primary-light: rgb(8, 102, 152);
+            --primary-darker: rgb(8, 102, 152);
+            --primary-accent: rgb(8, 102, 152);
+            --blue-background: #0084cd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            position: relative;
+            margin-top: -3rem;
+        }
+
+        .left-section {
+            width: 50%;
+            background-color: var(--blue-background);
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+            padding: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .right-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem;
+            position: relative;
+        }
+
+        {% comment %} .image-placeholder {
+            width: 100%;
+            height: 250px;
+            border: 3px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-placeholder span {
+            font-size: 24px;
+            color: #333;
+        } {% endcomment %}
+
+        .about-us {
+            width: 100%;
+            max-width: 600px;
+            padding: 3rem;
+            border: none;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            background-color: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-us::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-accent));
+        }
+
+        .about-us h2 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-darker);
+            font-size: 32px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .about-us h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .about-us p {
+            color: #444;
+            line-height: 1.8;
+            text-align: center;
+            font-size: 17px;
+            margin-bottom: 1rem;
+        }
+
+        .about-us strong {
+            color: var(--primary-darker);
+        }
+
+        .about-us .emoji {
+            font-size: 24px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .button {
+            padding: 12px 36px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+            outline: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .button.primary:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .button.secondary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        .button.secondary:hover {
+            background-color: #f0f0f0;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(76, 110, 245, 0.05) 0%, rgba(76, 110, 245, 0.02) 100%);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(76, 110, 245, 0.05);
+        }
+
+        .logo-container::before,
+        .logo-container::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(76, 110, 245, 0.1) 0%, rgba(76, 110, 245, 0.02) 100%);
+            z-index: -1;
+        }
+
+        .logo-container::before {
+            top: -20px;
+            left: -20px;
+        }
+
+        .logo-container::after {
+            bottom: -20px;
+            right: -20px;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo span {
+            position: relative;
+        }
+
+        .logo span::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .dot-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.4;
+            overflow: hidden;
+        }
+
+        .dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            opacity: 0.4;
+        }
+
+        .dot:nth-child(1) { top: 10%; left: 10%; }
+        .dot:nth-child(2) { top: 20%; left: 20%; }
+        .dot:nth-child(3) { top: 30%; left: 70%; }
+        .dot:nth-child(4) { top: 40%; left: 30%; }
+        .dot:nth-child(5) { top: 50%; left: 80%; }
+        .dot:nth-child(6) { top: 60%; left: 40%; }
+        .dot:nth-child(7) { top: 70%; left: 60%; }
+        .dot:nth-child(8) { top: 80%; left: 15%; }
+        .dot:nth-child(9) { top: 90%; left: 85%; }
+
+        .wave {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background: repeating-linear-gradient(
+                -45deg,
+                var(--primary-color),
+                var(--primary-color) 10px,
+                transparent 10px,
+                transparent 20px
+            );
+            z-index: -2;
+            clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .shape:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 60%;
+            left: 20%;
+            animation-delay: 3s;
+        }
+
+        .shape:nth-child(3) {
+            width: 70px;
+            height: 70px;
+            top: 30%;
+            left: 80%;
+            animation-delay: 6s;
+        }
+
+        .shape:nth-child(4) {
+            width: 120px;
+            height: 120px;
+            top: 70%;
+            left: 70%;
+            animation-delay: 9s;
+        }
+
+        .icon-decoration {
+            position: absolute;
+            font-size: 18px;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+
+        .icon-decoration:nth-child(1) { top: 20px; left: 30px; content: '⚙️'; }
+        .icon-decoration:nth-child(2) { top: 10px; right: 40px; content: '💻'; }
+        .icon-decoration:nth-child(3) { bottom: 15px; left: 50px; content: '🔍'; }
+        .icon-decoration:nth-child(4) { bottom: 25px; right: 30px; content: '📊'; }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .left-section, .right-section {
+                width: 100%;
+                padding: 2rem;
+            }
+            
+            .left-section {
+                clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+                padding-bottom: 4rem;
+            }
+            
+            .logo-container {
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .about-us {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <img src="{% static 'images/landing-page.webp' %}" alt="UpSkillX" />
+        </div>
+        <div class="right-section">
+            <div class="logo-container">
+                <div class="dot-pattern">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="wave"></div>
+                <div class="icon-decoration">⚙️</div>
+                <div class="icon-decoration">💻</div>
+                <div class="icon-decoration">🔍</div>
+                <div class="icon-decoration">📊</div>
+                <div class="logo"><span>UpSkillX</span></div>
+            </div>
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Master the tech domain of your choice with <strong>roadmaps</strong> for <strong>Web Development, Data Science, Mobile Development, AI/ML, Cybersecurity, and Cloud Computing</strong>. Access <strong>cheat sheets, essential resources, must-have tools, and certification guides</strong>—all in one place.</p>
+                <p>Your journey to expertise starts here! <span class="emoji">🚀</span></p>
+            </div>
+            <div class="buttons">
+                <a href="{% url 'signup' %}"><button class="button primary">Register</button></a>
+                <a href="{% url 'login'%}"><button class="button secondary">Login</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Clear the localStorage flag when the user lands on this page after logout
+        localStorage.removeItem('popupShown');
+    </script>
+
+
+    <script>
+        // Add interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.button');
+            
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+                
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 100);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

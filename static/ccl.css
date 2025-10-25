@@ -1,0 +1,308 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            width: 100%;
+            background-color: white;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            align-items: center;
+        }
+
+        .back-button {
+            display: block;
+            text-align: center;
+            line-height: 40px; /* Ensures text is centered */
+            background-color: #3a56d4;
+            border: none;
+            color: white;
+            height: 40px;
+            width: 100px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: box-shadow 0.15s;
+            margin-right: auto; /* Aligns the button to the left */
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none; /* Removes underline */
+        }
+
+        .back-button:hover {
+            background-color: #f8f9fa;
+            color: #3a56d4;
+        }
+
+        /* Container and Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color:   #3a56d4;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Domain Sections */
+        .domains {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .domain-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .domain-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .domain-image {
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .domain-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .domain-card:hover .domain-image img {
+            transform: scale(1.05);
+        }
+
+        .domain-content {
+            padding: 1.5rem;
+        }
+
+        .domain-content h2 {
+            color:   #3a56d4;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .domain-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #4361ee;
+        }
+
+        .domain-content p {
+            margin-bottom: 1.5rem;
+            color: #7f8c8d;
+        }
+
+        /* Course Lists */
+        .course-list {
+            list-style: none;
+        }
+
+        .course-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .course-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .course-item a {
+            display: block;
+            color: #4361ee;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .course-item a:hover {
+            color: #2980b9;
+        }
+
+        .course-item p {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            color: #7f8c8d;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .domains {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .domain-content h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 80px 15px 30px;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+        }
+
+/* Navbar Styles */
+.dark-mode .navbar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.dark-mode .back-button {
+    display: block;
+    line-height: 40px; /* Ensures text is centered */
+    text-align: center;
+    border: none;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: box-shadow 0.15s;
+    margin-right: auto; /* Aligns the button to the left */
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    background-color: var(--card-bg-color);
+    color: var(--primary-color);
+}
+
+.dark-mode .back-button:hover {
+    background-color: var(--hover-bg);
+    color: #333;
+}
+
+/* Domain Sections */
+.dark-mode .domain-card {
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 15px rgba(224, 222, 222, 0.861);
+}
+
+.dark-mode .domain-card:hover {
+    background-color: var(--card-hover);
+    box-shadow: 0 5px 15px rgba(224, 222, 222, 0.861);
+}
+
+.dark-mode .domain-content h2 {
+    color: var(--primary-color);
+}
+
+.dark-mode .domain-content h2::after {
+    background-color: var(--primary-color);
+}
+
+.dark-mode .domain-content p {
+    color: var(--secondary-color);
+}
+
+/* Links in Dark Mode */
+.dark-mode .course-item a {
+    color: var(--primary-color);
+}
+
+.dark-mode .course-item a:hover {
+    color: #5fa6e3; /* Slightly lighter primary color for hover */
+}
+
+.dark-mode .course-item p {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+.dark-mode footer {
+    color: var(--secondary-color);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Adjustments in Dark Mode */
+@media (max-width: 768px) {
+    .dark-mode header h1 {
+        color: var(--text-color);
+    }
+}
+
+@media (max-width: 480px) {
+    .dark-mode header h1 {
+        color: var(--text-color);
+    }
+}

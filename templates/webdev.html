@@ -1,0 +1,1134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Roadmap - EduLearn</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="{% static 'domainstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'popupstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'darkmode.css' %}" rel="stylesheet">
+    <link href="{% static 'chatbot.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    {% include 'header.html' %}
+
+    <!-- Hero Section -->
+    <section class="webdev-hero">
+        <div class="container">
+            <div class="webdev-hero-content">
+                <h1>Web Development Roadmap</h1>
+                <p>Master the art of building websites and web applications with our comprehensive learning path. From HTML basics to advanced frameworks, we've got you covered.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Introduction -->
+    <section class="roadmap-intro, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Your Journey to Becoming a Web Developer</h2>
+                <p>Follow this roadmap to go from complete beginner to professional web developer. Each stage builds upon the previous one, giving you a solid foundation.</p>
+            </div>
+            <div class="roadmap-overview">
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon beginner">
+                        <span>1</span>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Learn the fundamentals</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon intermediate">
+                        <span>2</span>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>Build interactive sites</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon advanced">
+                        <span>3</span>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>Master frameworks</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon expert">
+                        <span>4</span>
+                    </div>
+                    <h3>Expert</h3>
+                    <p>Full-stack mastery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Steps -->
+    <section class="roadmap-steps">
+        <div class="container">
+            <!-- Step 1: HTML -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">1</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>HTML - Structure and Content</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">HTML (HyperText Markup Language) is the backbone of any website. It defines the structure and content of web pages.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="html1">
+                                    <span class="checkbox-text" data-for="html1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        HTML document structure
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="html2">
+                                    <span class="checkbox-text" data-for="html2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        HTML elements and attributes
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="html3">
+                                    <span class="checkbox-text" data-for="html3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Text formatting and lists
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="html4">
+                                    <span class="checkbox-text" data-for="html4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Links and navigation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="html5">
+                                    <span class="checkbox-text" data-for="html5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Images and multimedia
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="html6">
+                                    <span class="checkbox-text" data-for="html6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Tables and forms
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="html7">
+                                    <span class="checkbox-text" data-for="html7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Semantic HTML
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="html8">
+                                    <span class="checkbox-text" data-for="html8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        HTML5 features
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="congrats-message" id="congratsMessage">🎉 Congratulations on completing a step! 🎉</div>
+                        </div>
+                        <canvas id="confettiCanvas"></canvas>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="htmlproject1">
+                                    <span class="checkbox-text" data-for="htmlproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/RZRdpkzfLrQ?si=pf193NzKttSq_KYo" target="_blank">Personal profile page</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="htmlproject2">
+                                    <span class="checkbox-text" data-for="htmlproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/mLVvkG4sgtY?si=eqLm18bZKjuOXy-Y" target="_blank">Product landing page</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="htmlproject3">
+                                    <span class="checkbox-text" data-for="htmlproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/19UtNhDs5Kg?si=oXEr0s9ljau5dAnO" target="_blank">Survey form</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>HTML Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="htmlResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="htmlResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 class="standard">HTML Video Resources</h2>
+                    <p class="standard class="standard"">Check out these helpful YouTube tutorials to learn HTML:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/html.webp' %}" alt="HTML Tutorial for Beginners">
+                        <div class="popup-card-content">
+                            <h3 class="standard">HTML Tutorial for Beginners</h3>
+                            <p>Learn the basics of HTML in this comprehensive guide</p>
+                            <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/html.webp' %}" alt="HTML Document Structure">
+                        <div class="popup-card-content">
+                            <h3 class="standard">HTML Document Structure Explained</h3>
+                            <p>Understanding the core structure of HTML documents</p>
+                            <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/html.webp' %}" alt="HTML Forms Tutorial">
+                        <div class="popup-card-content">
+                            <h3 class="standard">Creating Forms with HTML</h3>
+                            <p>Learn how to build interactive forms for your websites</p>
+                            <a href="https://www.youtube.com/watch?v=fNcJuPIZ2WE" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/html.webp' %}" alt="Semantic HTML">
+                        <div class="popup-card-content">
+                            <h3 class="standard">Semantic HTML5 Elements</h3>
+                            <p>Using semantic tags to improve your website's structure</p>
+                            <a href="https://www.youtube.com/watch?v=kGW8Al_cga4" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+        
+                    <div class="popup-card">
+                        <img src="{% static 'images/html.webp' %}" alt="HTML">
+                        <div class="popup-card-content">
+                            <h3 class="standard">HTML & CSS Full Course - Beginner to Pro</h3>
+                            <p>HTML & CSS crash course with YouTube landing page clone</p>
+                            <a href="https://youtu.be/G3e-cpL7ofc?si=6kb2me5gaMtrWyMd" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!-- Step 2: CSS -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">2</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>CSS - Styling and Layout</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">CSS (Cascading Style Sheets) is used to style and layout web pages. It controls how HTML elements are displayed on screen.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="css1">
+                                    <span class="checkbox-text" data-for="css1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        CSS selectors and properties
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="css2">
+                                    <span class="checkbox-text" data-for="css2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Box model and layout
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="css3">
+                                    <span class="checkbox-text" data-for="css3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Colors, backgrounds, and borders
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="css4">
+                                    <span class="checkbox-text" data-for="css4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Typography and text styling
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="css5">
+                                    <span class="checkbox-text" data-for="css5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Flexbox and Grid layout
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="css6">
+                                    <span class="checkbox-text" data-for="css6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Responsive design with media queries
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="css7">
+                                    <span class="checkbox-text" data-for="css7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        CSS animations and transitions
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="css8">
+                                    <span class="checkbox-text" data-for="css8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        CSS preprocessors (SASS/SCSS)
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cssproject1">
+                                    <span class="checkbox-text" data-for="cssproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/0YFrGy_mzjY?si=x35RpdXEbtHlMBi5" target="_blank">Portfolio website</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cssproject2">
+                                    <span class="checkbox-text" data-for="cssproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/oYRda7UtuhA?si=yko7asRiDQaFVuan" target="_blank">Responsive landing page</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cssproject3">
+                                    <span class="checkbox-text" data-for="cssproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/PwWHL3RyQgk?si=bugXhdnSvkG-PSLg" target="_blank">Interactive navigation menu</a>
+                                    </span>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>CSS Essentials</h5>
+                                <a href="#" class="view-button" data-modal-target="cssResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cssResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 class="standard">CSS Video Resources</h2>
+                    <p class="standard">Check out these helpful YouTube tutorials to learn CSS:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/css.webp' %}" alt="css">
+                        <div class="popup-card-content">
+                            <h3 class="standard">CSS Crash Course for absolute beginner</h3>
+                            <p>Learn the basics of CSS in this comprehensive guide</p>
+                            <a href="https://youtu.be/yfoY53QXEnI?si=UO--sguetI9286D6" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/css.webp' %}" alt="HTML Document Structure">
+                        <div class="popup-card-content">
+                            <h3 class="standard">HTML & CSS Crash Course Tutorial</h3>
+                            <p>Understanding the CSS basics</p>
+                            <a href="https://youtu.be/D3iEE29ZXRM?si=TL-Zw5DLuKLMfaWR" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/css.webp' %}" alt="HTML Forms Tutorial">
+                        <div class="popup-card-content">
+                            <h3 class="standard">CSS Full Course</h3>
+                            <p>Learn all CSS including Flexbox and Grid</p>
+                            <a href="https://youtu.be/ieTHC78giGQ?si=vG-PSA0P17AUW36p" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/css.webp' %}" alt="Semantic HTML">
+                        <div class="popup-card-content">
+                            <h3 class="standard">CSS Crash Course for Beginners</h3>
+                            <p>CSS courses with project</p>
+                            <a href="https://youtu.be/WuiB5TAQOAM?si=FzoBwtW6KOZQqB_n" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: JavaScript -->
+            <div class="roadmap-step">
+                <div class="step-number intermediate">3</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>JavaScript - Interactivity and Logic</h3>
+                        <span class="step-level">Intermediate</span>
+                    </div>
+                    <p class="step-description, step-description-dark">JavaScript is the programming language of the web. It allows you to create dynamic, interactive content and is essential for modern web development.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="js1">
+                                    <span class="checkbox-text" data-for="js1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        JavaScript syntax and data types
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="js2">
+                                    <span class="checkbox-text" data-for="js2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Variables, operators, and functions
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="js3">
+                                    <span class="checkbox-text" data-for="js3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Control flow (conditionals and loops)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="js4">
+                                    <span class="checkbox-text" data-for="js4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        DOM manipulation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="js5">
+                                    <span class="checkbox-text" data-for="js5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Events and event handling
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="js6">
+                                    <span class="checkbox-text" data-for="js6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Asynchronous JavaScript (Promises, async/await)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="js7">
+                                    <span class="checkbox-text" data-for="js7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Fetch API and AJAX
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="js8">
+                                    <span class="checkbox-text" data-for="js8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        ES6+ features
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="js9">
+                                    <span class="checkbox-text" data-for="js9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Error handling and debugging
+                                    </span>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="jsproject1">
+                                    <span class="checkbox-text" data-for="jsproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/CYlNJpltjMM?si=PMedfpRnof1Vej_J" target="_blank">Interactive form validation</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="jsproject2">
+                                    <span class="checkbox-text" data-for="jsproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/G0jO8kUrg-I?si=Q3AgnvqtMLDZyuZd" target="_blank">To-do list application</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="jsproject3">
+                                    <span class="checkbox-text" data-for="jsproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/MIYQR-Ybrn4?si=lexPGG9CYXfnJik_" target="_blank">Weather app with API integration</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="jsproject4">
+                                    <span class="checkbox-text" data-for="jsproject4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/PBcqGxrr9g8?si=DA5eMZtIiLakMJ2C" target="_blank">Interactive quiz game</a>
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>JavaScript Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="jsResourcesModal">View Resources &rarr;</a>
+                            </div>
+                            <!-- <div class="resource-card">
+                                <div class="resource-icon">🎓</div>
+                                <h5>Modern JavaScript</h5>
+                                <p>12 modules • 15 hours</p>
+                                <a href="#" class="btn btn-small">View Course</a>
+                            </div>  Use for refernece if needed-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jsResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>JavaScript Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn JavaScript:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/js.webp' %}" alt="HTML Tutorial for Beginners">
+                        <div class="popup-card-content">
+                            <h3>JavaScript Tutorial for Beginners - Full Course in 12 Hours</h3>
+                            <p>Comprehensive 12-hour tutorial covering JavaScript from the basics to advanced topics</p>
+                            <a href="https://youtu.be/lI1ae4REbFM?si=wkDoCJuaN5CWzVeG" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/js.webp' %}" alt="HTML Document Structure">
+                        <div class="popup-card-content">
+                            <h3>Learn JavaScript - Full Course for Beginners</h3>
+                            <p>Teaches you everything you need to know to get started with JavaScript</p>
+                            <a href="https://youtu.be/PkZNo7MFNFg?si=w3epY2H8w4RutsDb" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/js.webp' %}" alt="HTML Forms Tutorial">
+                        <div class="popup-card-content">
+                            <h3>JavaScript Tutorial Full Course - Beginner to Pro</h3>
+                            <p>This full course takes you from beginner to pro in JavaScript</p>
+                            <a href="https://youtu.be/EerdGm-ehJQ?si=8v9v-tK0H346yJId" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/js.webp' %}" alt="Semantic HTML">
+                        <div class="popup-card-content">
+                            <h3>JavaScript Full Course for free</h3>
+                            <p>This free full course provides a comprehensive guide to JavaScript</p>
+                            <a href="https://youtu.be/lfmg-EJ8gm4?si=0MBy7RoenMwmA5Nv" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Step 4: Frontend Frameworks -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">4</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Frontend Frameworks - React, Vue, Angular</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Frontend frameworks help you build complex, interactive user interfaces more efficiently. They provide structure, reusability, and better state management.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="react1">
+                                    <span class="checkbox-text" data-for="react1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Component-based architecture
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="react2">
+                                    <span class="checkbox-text" data-for="react2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        State management
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="react3">
+                                    <span class="checkbox-text" data-for="react3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Props and data flow
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="react4">
+                                    <span class="checkbox-text" data-for="react4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Lifecycle methods/hooks
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="react5">
+                                    <span class="checkbox-text" data-for="react5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Routing and navigation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="react6">
+                                    <span class="checkbox-text" data-for="react6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Form handling
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="react7">
+                                    <span class="checkbox-text" data-for="react7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        API integration
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="react8">
+                                    <span class="checkbox-text" data-for="react8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Testing and debugging
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="reactproject1">
+                                    <span class="checkbox-text" data-for="reactproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/pWd29MtFGJA?si=dxRFaYYcULfApSw0" target="_blank">Social media dashboard</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="reactproject2">
+                                    <span class="checkbox-text" data-for="reactproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/ZF73dpgRrWI?si=piWZyu_PJqw9QM7R" target="_blank">E-commerce product page</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="reactproject3">
+                                    <span class="checkbox-text" data-for="reactproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/6zv1PTuqIIc?si=g3GTBJwIW3SXodZJ" target="_blank">Blog with content management</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="reactproject4">
+                                    <span class="checkbox-text" data-for="reactproject4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/gbocZlm71nE?si=H9Z00O_r2QEScDlr" target="_blank">Real-time chat application</a>
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>React.js Essentials</h5>
+                                <a href="#" class="view-button" data-modal-target="reactResourcesModal">View Resources &rarr;</a>
+                            </div>
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Vue.js Essentials</h5>
+                                <a href="#" class="view-button" data-modal-target="vueResourcesModal">View Resources &rarr;</a>
+                            </div>
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Angular Essentials</h5>
+                                <a href="#" class="view-button" data-modal-target="angularResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for React Resources -->
+            <div id="reactResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>REACT Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn REACT:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/react.webp' %}" alt="react">
+                        <div class="popup-card-content">
+                            <h3>React Tutorial for Beginners</h3>
+                            <p>This comprehensive tutorial introduces React 18 with TypeScript, guiding beginners through building dynamic front-end applications.</p>
+                            <a href="https://youtu.be/SqcY0GlETPk?si=cMsHlRhL-oRzcku2" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/react.webp' %}" alt="react">
+                        <div class="popup-card-content">
+                            <h3>React Full Course for free</h3>
+                            <p>A beginner-friendly course covering the fundamentals of React, providing a solid foundation for building React applications.</p>
+                            <a href="https://youtu.be/CgkZ7MvWUAA?si=NrrAAmGiH3p8CFDf" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Modal for Vue Resources -->
+            <div id="vueResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Vue.js Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Vue.js:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/vue.webp' %}" alt="vue">
+                        <div class="popup-card-content">
+                            <h3>Vue.js Crash Course</h3>
+                            <p>A 3-hour crash course covering Vue.js fundamentals, including components, directives, and lifecycle methods, ideal for beginners.</p>
+                            <a href="https://youtu.be/VeNfHj6MhgA?si=epNZuNvj7pOa_0N7" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/vue.webp' %}" alt="vue">
+                        <div class="popup-card-content">
+                            <h3>Vue.js Tutorial: Beginner to Front-End Developer</h3>
+                            <p>This comprehensive course teaches fundamental concepts needed to start building applications with Vue 3, guiding learners from beginner to front-end developer.</p>
+                            <a href="https://youtu.be/1GNsWa_EZdw?si=McpypE7TYBiTnqrd" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Modal for Angular Resources -->
+            <div id="angularResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Angular Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Angular:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/angular.webp' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>MASTER Angular in 90 Minutes with This Crash Course</h3>
+                            <p>A concise crash course designed to help learners master Angular fundamentals in just 90 minutes.</p>
+                            <a href="https://youtu.be/oUmVFHlwZsI?si=BgRBHFspbEhxNff3" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/angular.webp' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Angular Crash Course</h3>
+                            <p>Learn the fundamentals of Angular in this project-based crash course</p>
+                            <a href="https://youtu.be/3dHNOWTI7H8?si=Npq9YSSXjkKpMrZY" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+
+            <!-- Step 5: Backend Development -->
+            <div class="roadmap-step">
+                <div class="step-number expert">5</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Backend Development - Node.js, Express</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Backend development focuses on server-side logic, databases, and APIs. It powers the functionality behind the scenes of web applications.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="node1">
+                                    <span class="checkbox-text" data-for="node1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Server-side programming with Node.js
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="node2">
+                                    <span class="checkbox-text" data-for="node2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        RESTful API development with Express
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="node3">
+                                    <span class="checkbox-text" data-for="node3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Database integration (MongoDB, MySQL)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="node4">
+                                    <span class="checkbox-text" data-for="node4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Authentication and authorization
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="node5">
+                                    <span class="checkbox-text" data-for="node5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Middleware and request handling
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="node6">
+                                    <span class="checkbox-text" data-for="node6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Error handling and logging
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="node7">
+                                    <span class="checkbox-text" data-for="node7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        File uploads and storage
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="node8">
+                                    <span class="checkbox-text" data-for="node8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Deployment and hosting
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="node9">
+                                    <span class="checkbox-text" data-for="node9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Security best practices
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="nodeproject1">
+                                    <span class="checkbox-text" data-for="nodeproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/OML9f6LXUUs?si=w1-FN7RJNl7HpJlF" target="_blank">RESTful API for a blog</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="nodeproject2">
+                                    <span class="checkbox-text" data-for="nodeproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/F-sFp_AvHc8?si=stVxEk7g_A90Yldq" target="_blank">User authentication system</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="nodeproject3">
+                                    <span class="checkbox-text" data-for="nodeproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/rMiRZ1iRC0A?si=xby0cnopxkKvY-au" target="_blank">E-commerce backend</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="nodeproject4">
+                                    <span class="checkbox-text" data-for="nodeproject4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/BDo1lgaZuII?si=ja22vpAPqfvg_dty" target="_blank">Building Notes APP</a>
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Node.js Fundamentals</h5>
+                                <!-- <p>18 lessons • 10 hours</p> -->
+                                <a href="#" class="view-button" data-modal-target="nodeResourcesModal">View Resources &rarr;</a>
+                            </div>
+                            <!-- <div class="resource-card">
+                                <div class="resource-icon">🎓</div>
+                                <h5>Complete Backend Development</h5>
+                                <p>22 modules • 30 hours</p>
+                                <a href="#" class="btn btn-small">View Course</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nodeResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Node.js Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Node.js:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/nodejs.webp' %}" alt="node">
+                        <div class="popup-card-content">
+                            <h3>Node.js Full Course for Beginners | Complete All-in-One Tutorial</h3>
+                            <p>This comprehensive tutorial introduces Node.js fundamentals, covering topics such as modules, file systems, and building a web server.</p>
+                            <a href="https://youtu.be/f2EqECiTBL8?si=KEjY866V0pZS6Ex9" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/nodejs.webp' %}" alt="node">
+                        <div class="popup-card-content">
+                            <h3>Node.js Crash Course</h3>
+                            <p>A concise crash course that walks through the basics of Node.js, including setting up a server and handling requests and responses.</p>
+                            <a href="https://youtu.be/32M1al-Y6Ag?si=mHIoLpzsKhf1bxZT" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/nodejs.webp' %}" alt="node">
+                        <div class="popup-card-content">
+                            <h3>Node.js Tutorial for Beginners | CRASH COURSE</h3>
+                            <p>An introductory tutorial that covers the essentials of Node.js, including installation, modules, and creating a simple server.</p>
+                            <a href="https://youtu.be/gyQyk80_upM?si=-Rv9u4Zm8e_P8w8r" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+
+                    <div class="popup-card">
+                        <img src="{% static 'images/express.webp' %}" alt="node">
+                        <div class="popup-card-content">
+                            <h3>Express JS Full Course</h3>
+                            <p>This comprehensive 8-hour course teaches all the core fundamentals needed to build server applications using Express.js.</p>
+                            <a href="https://youtu.be/nH9E25nkk3I?si=mUD4SFkAIwhtC4jK" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Step 6: Full-Stack Development -->
+            <div class="roadmap-step">
+                <div class="step-number expert">6</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Full-Stack Development - Bringing It All Together</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Full-stack development combines frontend and backend skills to build complete web applications from start to finish.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="fs1">
+                                    <span class="checkbox-text" data-for="fs1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Full-stack architecture and design patterns
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fs2">
+                                    <span class="checkbox-text" data-for="fs2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        State management across the stack
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fs3">
+                                    <span class="checkbox-text" data-for="fs3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Performance optimization
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fs4">
+                                    <span class="checkbox-text" data-for="fs4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Testing (unit, integration, end-to-end)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fs5">
+                                    <span class="checkbox-text" data-for="fs5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        CI/CD pipelines
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fs6">
+                                    <span class="checkbox-text" data-for="fs6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Containerization with Docker
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fs7">
+                                    <span class="checkbox-text" data-for="fs7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Cloud deployment (AWS, Azure, GCP)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fs8">
+                                    <span class="checkbox-text" data-for="fs8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Monitoring and logging
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="fsproject1">
+                                    <span class="checkbox-text" data-for="fsproject1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/VsUzmlZfYNg?si=X0g2vjwB-lxlOabi" target="_blank">Full-stack social network</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fsproject2">
+                                    <span class="checkbox-text" data-for="fsproject2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/4qyBjxPlEZo?si=IVRbzErC3SbEVf0-" target="_blank">Uber Application Clone</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fsproject3">
+                                    <span class="checkbox-text" data-for="fsproject3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/TvWd_D0nwiQ?si=Ry5cwh_t_xzXvANv" target="_blank">E-commerce platform</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fsproject4">
+                                    <span class="checkbox-text" data-for="fsproject4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/ntKkVrQqBYY?si=RlW_-2Hug616TDjD" target="_blank">Real-time Chat App</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>MERN Stack Masterclass</h5>
+                                <a href="#" class="view-button" data-modal-target="fullstackResourcesModal">View Resources &rarr;</a>
+                            </div>
+                            <!-- <div class="resource-card">
+                                <div class="resource-icon">🎓</div>
+                                <h5>Full-Stack Web Development</h5>
+                                <p>25 modules • 50 hours</p>
+                                <a href="#" class="btn btn-small">View Course</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div id="fullstackResourcesModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Full - Stack Video Resources</h2>
+                <p>Check out these helpful YouTube tutorials to learn Full-Stack:</p>
+                
+                <div class="popup-card">
+                    <img src="{% static 'images/fullstack.webp' %}" alt="node">
+                    <div class="popup-card-content">
+                        <h3>Full Stack Web Development for Beginners (Full Course on HTML, CSS, JavaScript, Node.js, MongoDB)</h3>
+                        <p>This comprehensive course covers the fundamentals of full-stack web development, including front-end and back-end technologies.</p>
+                        <a href="https://youtu.be/nu_pCVPKzTk?si=KDKKk5zy-3owLOlB" target="_blank">Watch Tutorial</a>
+                    </div>
+                </div>
+                
+                <div class="popup-card">
+                    <img src="{% static 'images/fullstack.webp' %}" alt="node">
+                    <div class="popup-card-content">
+                        <h3>Full Stack Web Development</h3>
+                        <p>An updated full-stack web development course that guides learners through building applications using modern technologies.</p>
+                        <a href="https://youtube.com/playlist?list=PLEiEAq2VkUULCC3eEATL4zzuapTjmo1Z_&si=ndo7Z79_itq-tY81" target="_blank">Watch Tutorial</a>
+                    </div>
+                </div>
+                
+                <div class="popup-card">
+                    <img src="{% static 'images/fullstack.webp' %}" alt="node">
+                    <div class="popup-card-content">
+                        <h3>Full Stack Developer Tutorial for Beginners | Simplilearn</h3>
+                        <p>A beginner-friendly tutorial that introduces the concepts and technologies involved in full-stack development.</p>
+                        <a href="https://www.youtube.com/live/09Je_ZqxuUs?si=o5IrNgqd5adySp_N" target="_blank">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Paths -->
+    <section class="career-paths, hero-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Web Development Career Paths</h2>
+            </div>
+            <div class="career-grid">
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">💻</div>
+                    <h3>Frontend Developer</h3>
+                    <ul>
+                        <li>Specialize in creating user interfaces and experiences.</li>
+                        <li><strong>Industries Hiring:</strong> Tech Companies, Startups, E-commerce, Media and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">⚙️</div>
+                    <h3>Backend Developer</h3>
+                    <ul>
+                        <li>Focus on server-side logic and database management.</li>
+                        <li><strong>Industries Hiring:</strong> Cloud Services, FinTech, Healthcare, Enterprise Software and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🔄</div>
+                    <h3>Full Stack Developer</h3>
+                    <ul>
+                        <li>Work across the entire web development stack.</li>
+                        <li><strong>Industries Hiring:</strong> SaaS Companies, IT Consulting, Government, EdTech and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🎨</div>
+                    <h3>UI/UX Developer</h3>
+                    <ul>
+                        <li>Combine design skills with frontend development.</li>
+                        <li><strong>Industries Hiring:</strong> Advertising, Mobile App Development, Gaming, Marketing and many more!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-button">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chatbot-box" class="hidden">
+        <div id="chat-header">Ask UpSkillX Bot <span id="chat-close">&times;</span></div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something...">
+            <button id="send-chat"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    {% comment %} <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Web Development Journey?</h2>
+                <p>Join thousands of students who have successfully followed our roadmap to become professional web developers.</p>
+                <a href="#" class="btn btn-primary">SIGN UP NOW</a>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+    <!-- Scripts -->
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'darkmodescript.js' %}"></script>
+    <script src="{% static 'progress.js' %}"></script>
+    <script src="{% static 'chatbot.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>

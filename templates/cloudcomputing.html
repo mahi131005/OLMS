@@ -1,0 +1,1153 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Roadmap - EduLearn</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="{% static 'domainstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'popupstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'darkmode.css' %}" rel="stylesheet">
+    <link href="{% static 'chatbot.css' %}" rel="stylesheet">
+
+    
+</head>
+<body>
+    <!-- Header Section -->
+    {% include 'header.html' %}
+
+    <!-- Hero Section -->
+    <section class="webdev-hero">
+        <div class="container">
+            <div class="webdev-hero-content">
+                <h1>Cloud Computing Roadmap</h1>
+                <p>Master the art of building, managing, and deploying applications in the cloud with our comprehensive learning path. From fundamentals to advanced cloud architectures, we've got you covered.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Introduction -->
+    <section class="roadmap-intro, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Your Journey to Becoming a Cloud Professional</h2>
+                <p>Follow this roadmap to go from complete beginner to cloud computing expert. Each stage builds upon the previous one, giving you a solid foundation in cloud technologies.</p>
+            </div>
+            <div class="roadmap-overview">
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon beginner">
+                        <span>1</span>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Learn the fundamentals</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon intermediate">
+                        <span>2</span>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>Cloud service mastery</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon advanced">
+                        <span>3</span>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>Architecture & DevOps</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon expert">
+                        <span>4</span>
+                    </div>
+                    <h3>Expert</h3>
+                    <p>Security & optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Steps -->
+    <section class="roadmap-steps">
+        <div class="container">
+            <!-- Step 1: Cloud Fundamentals -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">1</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Cloud Fundamentals - Core Concepts</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Understanding the basic concepts of cloud computing is essential before diving into specific cloud platforms and services.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cloud1">
+                                    <span class="checkbox-text" data-for="cloud1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cloud computing models (IaaS, PaaS, SaaS)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloud2">
+                                    <span class="checkbox-text" data-for="cloud2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Public, private, and hybrid clouds
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloud3">
+                                    <span class="checkbox-text" data-for="cloud3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cloud service providers overview
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloud4">
+                                    <span class="checkbox-text" data-for="cloud4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Benefits and challenges of cloud adoption
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloud5">
+                                    <span class="checkbox-text" data-for="cloud5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Basic virtualization concepts
+                                    </span>
+                                  </li>                                  
+                                  <li>
+                                    <input type="checkbox" id="cloud6">
+                                    <span class="checkbox-text" data-for="cloud6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Fundamental networking concepts
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloud7">
+                                    <span class="checkbox-text" data-for="cloud7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cloud storage concepts
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloud8">
+                                    <span class="checkbox-text" data-for="cloud8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Basic cloud security principles
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                            <div class="congrats-message" id="congratsMessage">🎉 Congratulations on completing a step! 🎉</div>
+                        </div>
+                        <canvas id="confettiCanvas"></canvas>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cloudact1">
+                                    <span class="checkbox-text" data-for="cloudact1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Set up your first cloud environment</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudact2">
+                                    <span class="checkbox-text" data-for="cloudact2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Deploy a simple static website</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudact3">
+                                    <span class="checkbox-text" data-for="cloudact3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Compare cloud service providers</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Cloud Computing Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="cloudFundamentalsModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cloudFundamentalsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cloud Computing Fundamentals Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn cloud computing fundamentals:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Cloud Computing Fundamentals">
+                        <div class="popup-card-content">
+                            <h3>Cloud Computing Full Course for Beginners</h3>
+                            <p>A comprehensive introduction to cloud computing concepts, service models, and deployment models</p>
+                            <a href="https://youtu.be/2LaAJq1lB1Q?si=Z5Tf8uy8D7bsw7xf" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Cloud Computing Models">
+                        <div class="popup-card-content">
+                            <h3>Cloud Computing Services Models - IaaS PaaS SaaS Explained</h3>
+                            <p>Understanding the differences between Infrastructure, Platform, and Software as a Service</p>
+                            <a href="https://youtu.be/36zducUX16w?si=MZNuIy7ybDWnvlkV" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Cloud Virtualization">
+                        <div class="popup-card-content">
+                            <h3>Virtualization Explained</h3>
+                            <p>Learn about the technology that powers cloud computing</p>
+                            <a href="https://youtu.be/FZR0rG3HKIk?si=Q0QwJeH06Dh4ovnH" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: AWS Essentials -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">2</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>AWS Essentials - Core Services</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Amazon Web Services (AWS) is the leading cloud provider. Understanding its core services is essential for any cloud professional.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="aws1">
+                                    <span class="checkbox-text" data-for="aws1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      AWS account setup and management
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="aws2">
+                                    <span class="checkbox-text" data-for="aws2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Identity and Access Management (IAM)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="aws3">
+                                    <span class="checkbox-text" data-for="aws3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Elastic Compute Cloud (EC2)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="aws4">
+                                    <span class="checkbox-text" data-for="aws4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Simple Storage Service (S3)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="aws5">
+                                    <span class="checkbox-text" data-for="aws5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Virtual Private Cloud (VPC)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="aws6">
+                                    <span class="checkbox-text" data-for="aws6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Relational Database Service (RDS)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="aws7">
+                                    <span class="checkbox-text" data-for="aws7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      AWS CLI and SDK
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="aws8">
+                                    <span class="checkbox-text" data-for="aws8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      AWS best practices and security fundamentals
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="awsproj1">
+                                    <span class="checkbox-text" data-for="awsproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Deploy a web application on EC2</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="awsproj2">
+                                    <span class="checkbox-text" data-for="awsproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Create and manage S3 buckets</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="awsproj3">
+                                    <span class="checkbox-text" data-for="awsproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Set up a MySQL database with RDS</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>AWS Core Services</h5>
+                                <a href="#" class="view-button" data-modal-target="awsResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="awsResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>AWS Core Services Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn AWS:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/aws.jpg' %}" alt="AWS">
+                        <div class="popup-card-content">
+                            <h3>AWS Certified Cloud Practitioner Certification Course</h3>
+                            <p>Comprehensive course covering all AWS fundamentals needed for certification</p>
+                            <a href="https://youtu.be/SOTamWNgDKc?si=uUmwjS-xp6dxr9S9" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/aws.jpg' %}" alt="AWS EC2">
+                        <div class="popup-card-content">
+                            <h3>AWS EC2 Tutorial</h3>
+                            <p>Learn how to create and manage virtual servers in AWS</p>
+                            <a href="https://youtu.be/8TlukLu11Yo?si=HL1Bm0PCRoGkMLZc" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/aws.jpg' %}" alt="AWS S3">
+                        <div class="popup-card-content">
+                            <h3>AWS S3 Tutorial</h3>
+                            <p>Master AWS object storage service from basics to advanced features</p>
+                            <a href="https://youtu.be/XGcoeEyt2UM?si=C3XgSDnGU9jtx-OD" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Azure and Google Cloud -->
+            <div class="roadmap-step">
+                <div class="step-number intermediate">3</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Azure and Google Cloud - Expanding Your Skills</h3>
+                        <span class="step-level">Intermediate</span>
+                    </div>
+                    <p class="step-description, step-description-dark">To be a well-rounded cloud professional, it's important to understand multiple cloud platforms and their unique strengths.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cloudsec1">
+                                    <span class="checkbox-text" data-for="cloudsec1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Azure account setup and management
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec2">
+                                    <span class="checkbox-text" data-for="cloudsec2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Azure Virtual Machines and App Services
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec3">
+                                    <span class="checkbox-text" data-for="cloudsec3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Azure Storage and Azure SQL Database
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec4">
+                                    <span class="checkbox-text" data-for="cloudsec4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Azure Active Directory
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec5">
+                                    <span class="checkbox-text" data-for="cloudsec5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Google Cloud Platform (GCP) basics
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec6">
+                                    <span class="checkbox-text" data-for="cloudsec6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Compute Engine and App Engine
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec7">
+                                    <span class="checkbox-text" data-for="cloudsec7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Google Cloud Storage
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec8">
+                                    <span class="checkbox-text" data-for="cloudsec8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Multi-cloud strategies and patterns
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cloudtask1">
+                                    <span class="checkbox-text" data-for="cloudtask1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Deploy applications across multiple clouds</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudtask2">
+                                    <span class="checkbox-text" data-for="cloudtask2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Implement hybrid storage solutions</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudtask3">
+                                    <span class="checkbox-text" data-for="cloudtask3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Build a multi-cloud monitoring dashboard</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Azure Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="azureResourcesModal">View Resources &rarr;</a>
+                            </div>
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Google Cloud Basics</h5>
+                                <a href="#" class="view-button" data-modal-target="gcpResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for Azure Resources -->
+            <div id="azureResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Microsoft Azure Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Microsoft Azure:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/azure.webp' %}" alt="Azure">
+                        <div class="popup-card-content">
+                            <h3>Azure Fundamentals Full Course | Azure Cloud Tutorial For Beginners</h3>
+                            <p>This extensive course provides a detailed walkthrough of Azure fundamentals, including cloud concepts, core Azure services, security, privacy, compliance, and pricing. It's designed to prepare learners for the AZ-900 certification exam.</p>
+                            <a href="https://youtu.be/96BwPugx1-c?si=z7jPoWERWs00UnkZ" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/azure.webp' %}" alt="Azure VMs">
+                        <div class="popup-card-content">
+                            <h3>Microsoft Azure Fundamentals Certification Course (AZ-900)</h3>
+                            <p>Comprehensive course covering all Azure fundamentals for certification</p>
+                            <a href="https://youtu.be/NKEFWyqJ5XA?si=wQj1V99CpA13gZ54" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Modal for GCP Resources -->
+            <div id="gcpResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Google Cloud Platform Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Google Cloud Platform:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/gcloud.png' %}" alt="GCP">
+                        <div class="popup-card-content">
+                            <h3>Google Cloud Platform Full Course</h3>
+                            <p>A comprehensive introduction to GCP services and features</p>
+                            <a href="https://youtu.be/IUU6OR8yHCc?si=u8J-f6t1IQA3wptO" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/gcloud.png' %}" alt="GCP">
+                        <div class="popup-card-content">
+                            <h3>Google Cloud Certification (Associate Cloud Engineer)</h3>
+                            <p>Preparation course for the GCP Associate Cloud Engineer exam</p>
+                            <a href="https://youtu.be/jpno8FSqpc8?si=GpJhvfFDZ_6Qk7Dx" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 4: Cloud Architecture -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">4</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Cloud Architecture - Design and Implementation</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Cloud architecture focuses on designing reliable, scalable, and secure cloud environments for applications and services.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="arch1">
+                                    <span class="checkbox-text" data-for="arch1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Well-Architected Framework principles
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="arch2">
+                                    <span class="checkbox-text" data-for="arch2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      High availability and fault tolerance
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="arch3">
+                                    <span class="checkbox-text" data-for="arch3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Disaster recovery strategies
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="arch4">
+                                    <span class="checkbox-text" data-for="arch4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Scalability patterns and auto-scaling
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="arch5">
+                                    <span class="checkbox-text" data-for="arch5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Microservices architecture
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="arch6">
+                                    <span class="checkbox-text" data-for="arch6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Serverless architecture
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="arch7">
+                                    <span class="checkbox-text" data-for="arch7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cost optimization strategies
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="arch8">
+                                    <span class="checkbox-text" data-for="arch8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Performance optimization
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="archproj1">
+                                    <span class="checkbox-text" data-for="archproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Design a highly available web application</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="archproj2">
+                                    <span class="checkbox-text" data-for="archproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Build a serverless data processing pipeline</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="archproj3">
+                                    <span class="checkbox-text" data-for="archproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Implement a microservices-based application</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="archproj4">
+                                    <span class="checkbox-text" data-for="archproj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Create a disaster recovery solution</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Cloud Architecture Patterns</h5>
+                                <a href="#" class="view-button" data-modal-target="architectureResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="architectureResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cloud Architecture Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Cloud Architecture:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Microservices">
+                        <div class="popup-card-content">
+                            <h3>Microservices Architecture Explained</h3>
+                            <p>Learn about building applications as a collection of small, independent services</p>
+                            <a href="https://youtu.be/1xo-0gCVhTU?si=LqcpTt6IQVpCv9GI" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Serverless">
+                        <div class="popup-card-content">
+                            <h3>Serverless Architecture Explained</h3>
+                            <p>Understanding the benefits and implementation of serverless computing</p>
+                            <a href="https://youtu.be/Fx3ZGy-mbV4?si=PEW13_YvjNK4RJUn" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Well-Architected">
+                        <div class="popup-card-content">
+                            <h3>AWS Well-Architected Framework</h3>
+                            <p>Learn the six pillars of building secure, efficient, and cost-effective systems</p>
+                            <a href="https://youtu.be/x6DIk0_2Goo?si=N0qf5qE5WTHnEUgd" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: DevOps for Cloud -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">5</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>DevOps for Cloud - Automation and CI/CD</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">DevOps practices help automate and streamline the processes between software development and IT operations in cloud environments.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="devops1">
+                                    <span class="checkbox-text" data-for="devops1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Infrastructure as Code (IaC)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devops2">
+                                    <span class="checkbox-text" data-for="devops2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Terraform and CloudFormation
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devops3">
+                                    <span class="checkbox-text" data-for="devops3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Continuous Integration/Continuous Deployment
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devops4">
+                                    <span class="checkbox-text" data-for="devops4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Container orchestration with Kubernetes
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devops5">
+                                    <span class="checkbox-text" data-for="devops5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Docker containerization
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devops6">
+                                    <span class="checkbox-text" data-for="devops6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      CI/CD tools (Jenkins, GitHub Actions)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devops7">
+                                    <span class="checkbox-text" data-for="devops7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Configuration management (Ansible, Chef)
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devops8">
+                                    <span class="checkbox-text" data-for="devops8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Monitoring and logging in the cloud
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="devproj1">
+                                    <span class="checkbox-text" data-for="devproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="https://youtu.be/iqqDU2crIEQ?si=QXy7-HXw6LdQhGc4" target="_blank">Create a CI/CD pipeline for cloud deployment</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devproj2">
+                                    <span class="checkbox-text" data-for="devproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;"><a href="#">
+                                      Build infrastructure with Terraform</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devproj3">
+                                    <span class="checkbox-text" data-for="devproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="https://youtu.be/bhBSlnQcq2k?si=5xoQyqKPr8Vx5WdH" target="_blank">Deploy a containerized application on Kubernetes</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="devproj4">
+                                    <span class="checkbox-text" data-for="devproj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="https://youtu.be/jFfo23yIWac?si=hSRsbgT5QS3jw1kl" target="_blank">Implement automated monitoring solutions</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Cloud DevOps Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="devopsResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="devopsResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cloud DevOps Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Cloud DevOps:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="DevOps">
+                        <div class="popup-card-content">
+                            <h3>DevOps Engineering Course for Beginners</h3>
+                            <p>Comprehensive introduction to DevOps practices and tools</p>
+                            <a href="https://youtu.be/j5Zsa_eOXeY?si=WCbRJ4k339UmCxsT" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Terraform">
+                        <div class="popup-card-content">
+                            <h3>Terraform Course - Infrastructure as Code</h3>
+                            <p>Learn how to provision and manage cloud infrastructure with code</p>
+                            <a href="https://youtu.be/SLB_c_ayRMo?si=j-TBxGxUDk3BInfP" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Kubernetes">
+                        <div class="popup-card-content">
+                            <h3>Kubernetes Tutorial for Beginners</h3>
+                            <p>Introduction to container orchestration with Kubernetes</p>
+                            <a href="https://youtu.be/X48VuDVv0do?si=tGt5Nj9TLbM9DgGb" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Docker">
+                        <div class="popup-card-content">
+                            <h3>Docker Tutorial for Beginners</h3>
+                            <p>Learn containerization basics with Docker</p>
+                            <a href="https://youtu.be/pTFZFxd4hOI?si=DUv2UH_kzHj1IQGp" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6: Cloud Security -->
+            <div class="roadmap-step">
+                <div class="step-number expert">6</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Cloud Security - Protecting Your Assets</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Security is critical in cloud environments. As an expert, you need to understand how to protect cloud resources from various threats.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cloudsec1">
+                                    <span class="checkbox-text" data-for="cloudsec1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cloud security best practices
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec2">
+                                    <span class="checkbox-text" data-for="cloudsec2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Identity and access management strategies
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec3">
+                                    <span class="checkbox-text" data-for="cloudsec3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Network security in the cloud
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec4">
+                                    <span class="checkbox-text" data-for="cloudsec4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Data encryption and protection
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec5">
+                                    <span class="checkbox-text" data-for="cloudsec5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Security compliance and governance
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec6">
+                                    <span class="checkbox-text" data-for="cloudsec6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Threat detection and remediation
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec7">
+                                    <span class="checkbox-text" data-for="cloudsec7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Security automation
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsec8">
+                                    <span class="checkbox-text" data-for="cloudsec8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Incident response planning
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cloudsecproj1">
+                                    <span class="checkbox-text" data-for="cloudsecproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Implement a comprehensive IAM strategy</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsecproj2">
+                                    <span class="checkbox-text" data-for="cloudsecproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Secure a cloud network architecture</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsecproj3">
+                                    <span class="checkbox-text" data-for="cloudsecproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Build an automated security monitoring system</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudsecproj4">
+                                    <span class="checkbox-text" data-for="cloudsecproj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Create a cloud security compliance framework</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Cloud Security Essentials</h5>
+                                <a href="#" class="view-button" data-modal-target="securityResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="securityResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cloud Security Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Cloud Security:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Azure Security">
+                        <div class="popup-card-content">
+                            <h3>Cloud Security Risks: Identify and Protect Against Threats | Google Cloud Cybersecurity Certificate</h3>
+                            <p>This video comprises of the potential cloud security risks and how to identify and protect against these threats.</p>
+                            <a href="https://youtu.be/kfH5CxRar8w?si=k82zVdBwtcIrCz8F" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Zero Trust">
+                        <div class="popup-card-content">
+                            <h3>Zero Trust Security Model</h3>
+                            <p>Implementing Zero Trust architecture in cloud environments</p>
+                            <a href="https://youtu.be/FCWl-1Q-GIQ?si=AXjh8N4Mg1sWCRId" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7: Advanced Cloud Topics -->
+            <div class="roadmap-step">
+                <div class="step-number expert">7</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Advanced Cloud Topics - Specialization</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">At this level, you can specialize in advanced areas of cloud computing that align with your interests and career goals.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cloudadv1">
+                                    <span class="checkbox-text" data-for="cloudadv1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Machine Learning in the cloud
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudadv2">
+                                    <span class="checkbox-text" data-for="cloudadv2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Big Data processing
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudadv3">
+                                    <span class="checkbox-text" data-for="cloudadv3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Blockchain on the cloud
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudadv4">
+                                    <span class="checkbox-text" data-for="cloudadv4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      IoT and edge computing
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudadv5">
+                                    <span class="checkbox-text" data-for="cloudadv5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Quantum computing services
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudadv6">
+                                    <span class="checkbox-text" data-for="cloudadv6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cloud native development
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudadv7">
+                                    <span class="checkbox-text" data-for="cloudadv7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Hybrid and multi-cloud strategies
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="cloudadv8">
+                                    <span class="checkbox-text" data-for="cloudadv8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      Cloud governance and compliance
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="projcloud1">
+                                    <span class="checkbox-text" data-for="projcloud1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Deploy a machine learning model in the cloud</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="projcloud2">
+                                    <span class="checkbox-text" data-for="projcloud2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Build a big data processing pipeline</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="projcloud3">
+                                    <span class="checkbox-text" data-for="projcloud3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Create an IoT solution with cloud backend</a>
+                                    </span>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="projcloud4">
+                                    <span class="checkbox-text" data-for="projcloud4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                      <a href="#">Implement a hybrid cloud strategy</a>
+                                    </span>
+                                  </li>                                  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Advanced Cloud Specializations</h5>
+                                <a href="#" class="view-button" data-modal-target="advancedResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="advancedResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Advanced Cloud Topics Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn advanced cloud topics:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="ML">
+                        <div class="popup-card-content">
+                            <h3>Fundamentals of machine learning in the cloud | Machine Learning Essentials</h3>
+                            <p>This video provides an introduction to machine learning while exploring the key phases of the machine learning lifecycle. </p>
+                            <a href="https://youtu.be/CtX0GZpWz6M?si=iexYKasWJAL1x3ic" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Big Data">
+                        <div class="popup-card-content">
+                            <h3>Machine learning on Google Cloud</h3>
+                            <p>This discusses some different machine learning options on Google Cloud for different experience levels and project needs. </p>
+                            <a href="https://youtu.be/f-Ly6qMETDY?si=5lruDKBg3tjDPIth" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="IoT">
+                        <div class="popup-card-content">
+                            <h3>ML Engine - Machine Learning in the Cloud</h3>
+                            <p>Learn how to build and deploy a machine learning model to Cloud ML Engine, then make it available to the world via Firebase Cloud Functions. </p>
+                            <a href="https://youtu.be/fsv0rty7QhU?si=BBV2-A6ETFBm0YI1" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Hybrid Cloud">
+                        <div class="popup-card-content">
+                            <h3>Hybrid Cloud Architecture</h3>
+                            <p>Designing and implementing hybrid cloud solutions</p>
+                            <a href="https://youtu.be/qkj5W98Xdvw?si=KWDBE9ZaZf9-x70A" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="career-paths hero-section">
+        <div class="container">
+            <div class="section-header section-header-dark">
+                <h2>Cloud Computing Career Paths</h2>
+            </div>
+            <div class="career-grid">
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">☁️</div>
+                    <h3>Cloud Engineer</h3>
+                    <ul>
+                        <li>Design, implement, and manage cloud infrastructure.</li>
+                        <li><strong>Industries Hiring:</strong> Tech, Finance, Healthcare, E-commerce and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🛠️</div>
+                    <h3>Cloud Architect</h3>
+                    <ul>
+                        <li>Develop cloud strategy and oversee cloud environments.</li>
+                        <li><strong>Industries Hiring:</strong> IT Services, Government, Manufacturing, Energy and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🔐</div>
+                    <h3>Cloud Security Specialist</h3>
+                    <ul>
+                        <li>Implement and monitor security measures for cloud environments.</li>
+                        <li><strong>Industries Hiring:</strong> Cybersecurity, Banking, Telecom, Healthcare and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">📊</div>
+                    <h3>DevOps Engineer</h3>
+                    <ul>
+                        <li>Automate and streamline cloud deployments and operations.</li>
+                        <li><strong>Industries Hiring:</strong> SaaS, Gaming, Retail, Logistics and many more!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-button">
+      <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chatbot-box" class="hidden">
+        <div id="chat-header">Ask UpSkillX Bot <span id="chat-close">&times;</span></div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something...">
+            <button id="send-chat"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    {% include 'footer.html' %}
+
+    <!-- JavaScript -->
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'darkmodescript.js' %}"></script>
+    <script src="{% static 'progress.js' %}"></script>
+    <script src="{% static 'chatbot.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

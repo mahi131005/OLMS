@@ -1,0 +1,380 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}"> 
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color:#3a56d4;
+            --light-bg: #f8f9fa;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --danger-color: #dc3545;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .table-container {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 20px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f8f9fa;
+            color: var(--primary-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        td {
+            vertical-align: middle;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tbody tr:hover {
+            background-color: rgba(74, 111, 165, 0.05);
+        }
+        
+        /* Group related columns */
+        .column-group {
+            border-right: 1px solid #e0e0e0;
+        }
+        
+        .column-group:last-child {
+            border-right: none;
+        }
+        
+        /* New feedback highlighting */
+        tr.new-feedback {
+            background-color: rgba(74, 111, 165, 0.1);
+            animation: highlight 2s ease-in-out;
+        }
+        
+        @keyframes highlight {
+            0% { background-color: rgba(74, 111, 165, 0.3); }
+            100% { background-color: rgba(74, 111, 165, 0.1); }
+        }
+        
+        /* Truncate long text */
+        .truncate {
+            max-width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            th, td {
+                padding: 8px 10px;
+                font-size: 0.8rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+            
+            .header-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+        
+        /* Rating visualization */
+        .rating {
+            display: inline-block;
+            background-color: #eef2f7;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .rating.high {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .rating.medium {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        
+        .rating.low {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        /* Navigation controls */
+        .table-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .feedback-nav {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .feedback-nav button {
+            padding: 8px 12px;
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            cursor: pointer;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.2s ease;
+        }
+        
+        .feedback-nav button:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .feedback-status {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+        
+        /* Feedback counter */
+        .feedback-counter {
+            background-color: var(--light-bg);
+            padding: 10px 15px;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+        
+        /* Logout button */
+        .logout-btn {
+            padding: 8px 16px;
+            background-color: white;
+            color: var(--danger-color);
+            border: 1px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .logout-btn:hover {
+            background-color: var(--danger-color);
+            color: white;
+        }
+        
+        .logout-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h2>Admin Dashboard - Feedback Responses</h2>
+            </div>
+            <div class="header-right">
+                <div class="feedback-counter">
+                    Total Feedback: <span id="feedback-count">0</span>
+                </div>
+                <a href="{% url 'export_feedback' %}">
+                    <button class="logout-btn">Download Feedback (PDF)</button>
+                </a>                
+                <a href="{% url 'logout' %}"><button class="logout-btn" id="logout-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    Logout
+                </button></a>
+            </div>
+        </header>
+        
+        <div class="table-container">
+            <div class="table-controls">
+                <div class="feedback-status">
+                    Showing feedback entries - newest first
+                </div>
+                <div class="feedback-nav">
+                    <button id="prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                        Previous
+                    </button>
+                    <button id="next-btn">
+                        Next
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th class="column-group" scope="col">Student Info</th>
+                        <th class="column-group" scope="col">Email</th>
+                        <th class="column-group" scope="col">Course</th>
+                        <th class="column-group" scope="col">Ratings</th>
+                        <th class="column-group" scope="col">Content Evaluation</th>
+                        <th class="column-group" scope="col">Interface</th>
+                        <th class="column-group" colspan="2" scope="col">Feedback Details</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Relevance</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Best Feature</th>
+                        <th scope="col">Additional Feedback</th>
+                    </tr>
+                </thead>
+                <tbody id="feedback-table-body">
+                    {% for feedback in feedbacks %}
+                    <tr {% if loop.first %}class="new-feedback"{% endif %}>
+                        <td>{{ feedback.student_name }}</td>
+                        <td>{{ feedback.email }}</td>
+                        <td>{{ feedback.course_name }}</td>
+                        <td>
+                            <span class="rating {% if feedback.course_rating >= 4 %}high{% elif feedback.course_rating >= 3 %}medium{% else %}low{% endif %}">
+                                {{ feedback.course_rating }}
+                            </span>
+                        </td>
+                        <td>{{ feedback.content_relevance }}</td>
+                        <td>
+                            <span class="rating {% if feedback.interface_rating >= 4 %}high{% elif feedback.interface_rating >= 3 %}medium{% else %}low{% endif %}">
+                                {{ feedback.interface_rating }}
+                            </span>
+                        </td>
+                        <td>{{ feedback.best_feature }}</td>
+                        <td>
+                                {{ feedback.additional_feedback }}
+                            {% comment %} </span> {% endcomment %}
+                        </td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Simple JS for dynamic behavior -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // For demonstration purposes - update feedback count
+                const feedbackCount = document.querySelectorAll('#feedback-table-body tr').length;
+                document.getElementById('feedback-count').textContent = feedbackCount;
+                
+                // Navigation buttons - would be connected to actual data loading in a real implementation
+                document.getElementById('next-btn').addEventListener('click', function() {
+                    alert('This would load newer feedback entries');
+                });
+                
+                document.getElementById('prev-btn').addEventListener('click', function() {
+                    alert('This would load older feedback entries');
+                });
+                
+                // Logout button functionality
+                document.getElementById('logout-button').addEventListener('click', function() {
+                    if (confirm('Are you sure you want to logout?')) {
+                        // Redirect to logout page or trigger logout action
+                        alert('Logging out...');
+                        // In a real implementation, this would redirect to a logout endpoint
+                        // window.location.href = '/logout';
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1009 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Machine Learning Roadmap - EduLearn</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'domainstyles.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="{% static 'domainstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'popupstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'darkmode.css' %}" rel="stylesheet">
+    <link href="{% static 'chatbot.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    {% include 'header.html' %}
+
+    <!-- Hero Section -->
+    <section class="webdev-hero">
+        <div class="container">
+            <div class="webdev-hero-content">
+                <h1>AI & Machine Learning Roadmap</h1>
+                <p>Master the art of building intelligent systems with our comprehensive learning path. From mathematical foundations to deep learning architectures, we've got you covered.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Introduction -->
+    <section class="roadmap-intro, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Your Journey to Becoming an AI Engineer</h2>
+                <p>Follow this roadmap to go from complete beginner to professional AI specialist. Each stage builds upon the previous one, giving you a solid foundation.</p>
+            </div>
+            <div class="roadmap-overview">
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon beginner">
+                        <span>1</span>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Master the fundamentals</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon intermediate">
+                        <span>2</span>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>Build ML models</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon advanced">
+                        <span>3</span>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>Deep learning mastery</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon expert">
+                        <span>4</span>
+                    </div>
+                    <h3>Expert</h3>
+                    <p>Specialized AI applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Steps -->
+    <section class="roadmap-steps">
+        <div class="container">
+            <!-- Step 1: Mathematics for AI -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">1</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Mathematics for AI</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">A strong mathematical foundation is essential for understanding and developing AI and ML algorithms.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="mlmath1">
+                                    <span class="checkbox-text" data-for="mlmath1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Linear Algebra (vectors, matrices, eigenvalues)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlmath2">
+                                    <span class="checkbox-text" data-for="mlmath2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Calculus (derivatives, integrals, gradients)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlmath3">
+                                    <span class="checkbox-text" data-for="mlmath3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Probability and Statistics
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlmath4">
+                                    <span class="checkbox-text" data-for="mlmath4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Optimization theory
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlmath5">
+                                    <span class="checkbox-text" data-for="mlmath5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Information theory
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlmath6">
+                                    <span class="checkbox-text" data-for="mlmath6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Discrete mathematics
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlmath7">
+                                    <span class="checkbox-text" data-for="mlmath7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Numerical methods
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="mlproj1">
+                                    <span class="checkbox-text" data-for="mlproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Matrix operations implementation</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlproj2">
+                                    <span class="checkbox-text" data-for="mlproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Statistical analysis of datasets</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlproj3">
+                                    <span class="checkbox-text" data-for="mlproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Gradient descent visualization</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                            <div class="congrats-message" id="congratsMessage">🎉 Congratulations on completing a step! 🎉</div>
+                        </div>
+                        <canvas id="confettiCanvas"></canvas>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Mathematics for Machine Learning</h5>
+                                <a href="#" class="view-button" data-modal-target="mathResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mathResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Mathematics for Machine Learning Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Mathematics for Machine Learning:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/math.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Linear Algebra - Foundations for Machine Learning</h3>
+                            <p>This video provides an overview of linear algebra concepts, including vectors, matrices, and eigenvalues, essential for machine learning.</p>
+                            <a href="https://www.youtube.com/watch?v=C8hEa2qb46k" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/math.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Probability & Information Theory — Subject 5 of Machine Learning Foundations</h3>
+                            <p>This lecture discusses probability theory and information theory, foundational for understanding machine learning algorithms.</p>
+                            <a href="https://www.youtube.com/watch?v=L-Q03jwsc1s" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/math.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Probability Theory and Linear Algebra (Mario Figueiredo)</h3>
+                            <p>This lecture covers fundamental concepts in probability theory and linear algebra, crucial for machine learning.</p>
+                            <a href="https://www.youtube.com/watch?v=qDlexDh38-E" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Programming for AI -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">2</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Programming for AI - Python</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Python is the most widely used programming language for AI and ML. Learn the language and key libraries used in data manipulation and analysis.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pyds1">
+                                    <span class="checkbox-text" data-for="pyds1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Python syntax and data structures
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyds2">
+                                    <span class="checkbox-text" data-for="pyds2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        NumPy for numerical computing
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyds3">
+                                    <span class="checkbox-text" data-for="pyds3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Pandas for data manipulation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyds4">
+                                    <span class="checkbox-text" data-for="pyds4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Matplotlib and Seaborn for visualization
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyds5">
+                                    <span class="checkbox-text" data-for="pyds5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Jupyter notebooks
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyds6">
+                                    <span class="checkbox-text" data-for="pyds6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Data cleaning and preprocessing
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyds7">
+                                    <span class="checkbox-text" data-for="pyds7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Version control with Git
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pyproj1">
+                                    <span class="checkbox-text" data-for="pyproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/MiiANxRHSv4?si=aauG57NaCPeBuUSk" target="_blank">Data analysis and visualization</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyproj2">
+                                    <span class="checkbox-text" data-for="pyproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Automated data cleaning pipeline</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pyproj3">
+                                    <span class="checkbox-text" data-for="pyproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/7yAw1nPareM?si=OOuv6hPWnab6WtHR" target="_blank">Interactive data dashboard</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <a href="#" class="view-button" data-modal-target="pyaiResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pyaiResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Python Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Python:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/python.png' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Python for Data Science - Full Course</h3>
+                            <p>This extensive tutorial covers Python syntax, data structures, and essential libraries like NumPy, Pandas, Matplotlib, and Seaborn. It also introduces Jupyter notebooks for interactive coding.</p>
+                            <a href="https://www.youtube.com/watch?v=LHBE6Q9XlzI" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/pandas.png' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Data Preprocessing using Pandas</h3>
+                            <p>This video focuses on data cleaning and preprocessing techniques using Pandas, providing practical examples to prepare data for analysis.</p>
+                            <a href="https://youtu.be/bDhvCp3_lYw?si=T1tXn02FIdKXw0yE" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/git.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Git Tutorial for Beginners: Learn Git in 1 Hour</h3>
+                            <p>This tutorial introduces version control with Git, covering fundamental commands and workflows essential for managing codebases effectively.</p>
+                            <a href="https://www.youtube.com/watch?v=8JJ101D3knE" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Step 3: Machine Learning Fundamentals -->
+            <div class="roadmap-step">
+                <div class="step-number intermediate">3</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Machine Learning Fundamentals</h3>
+                        <span class="step-level">Intermediate</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Understand the core concepts of machine learning and implement classic algorithms to solve real-world problems.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="mlf1">
+                                    <span class="checkbox-text" data-for="mlf1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Supervised vs. unsupervised learning
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlf2">
+                                    <span class="checkbox-text" data-for="mlf2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Regression algorithms
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlf3">
+                                    <span class="checkbox-text" data-for="mlf3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Classification algorithms
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlf4">
+                                    <span class="checkbox-text" data-for="mlf4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Clustering methods
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlf5">
+                                    <span class="checkbox-text" data-for="mlf5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Dimensionality reduction
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlf6">
+                                    <span class="checkbox-text" data-for="mlf6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Model evaluation and validation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlf7">
+                                    <span class="checkbox-text" data-for="mlf7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Feature engineering
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlf8">
+                                    <span class="checkbox-text" data-for="mlf8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Ensemble methods
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlf9">
+                                    <span class="checkbox-text" data-for="mlf9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Introduction to Scikit-learn
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="mlfp1">
+                                    <span class="checkbox-text" data-for="mlfp1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/1O_BenficgE?si=zU4oiesH14aLgOJO" target="_blank">Predictive price modeling</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlfp2">
+                                    <span class="checkbox-text" data-for="mlfp2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/SrY0sTJchHE?si=ANhqeyAEsPrxP1Tt" target="_blank">Customer segmentation system</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlfp3">
+                                    <span class="checkbox-text" data-for="mlfp3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/NCgjcHLFNDg?si=xOv7XuU3TVWrdM_I" target="_blank">Fraud detection system</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mlfp4">
+                                    <span class="checkbox-text" data-for="mlfp4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/7rEagFH9tQg?si=JMnWxER475WHXCQ5" target="_blank">Recommendation engine</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Machine Learning Essentials</h5>
+                                <a href="#" class="view-button" data-modal-target="mlResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mlResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Machine Learning Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Machine Learning:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/ml.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Supervised vs. Unsupervised Learning</h3>
+                            <p>This tutorial explains the differences between supervised and unsupervised learning, providing foundational knowledge for machine learning enthusiasts.</p>
+                            <a href="https://youtu.be/W01tIRP_Rqs?si=Ub2zgm2WNJ2dXBra" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/ml.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Machine Learning Algorithms:</h3>
+                            <p>This video delves into various machine learning algorithms, including regression, classification, clustering methods, and dimensionality reduction techniques.</p>
+                            <a href="https://youtu.be/I7NrVwm3apg?si=Cqua_8xxKx2WVrE_" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/scikit.png' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Scikit-Learn Crash Course</h3>
+                            <p>This comprehensive tutorial provides an introduction to Scikit-learn, a powerful Python library for machine learning.</p>
+                            <a href="https://youtu.be/0B5eIE_1vpU?si=btYYo-YEo1JcjwLN" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Deep Learning -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">4</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Deep Learning - Neural Networks</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Deep Learning is a subset of machine learning that uses multi-layered neural networks to learn representations of data with multiple levels of abstraction.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="dlis1">
+                                    <span class="checkbox-text" data-for="dlis1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Neural network architectures
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlis2">
+                                    <span class="checkbox-text" data-for="dlis2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Activation functions
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlis3">
+                                    <span class="checkbox-text" data-for="dlis3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Backpropagation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlis4">
+                                    <span class="checkbox-text" data-for="dlis4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        TensorFlow and PyTorch
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlis5">
+                                    <span class="checkbox-text" data-for="dlis5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Convolutional Neural Networks (CNNs)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlis6">
+                                    <span class="checkbox-text" data-for="dlis6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Recurrent Neural Networks (RNNs)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlis7">
+                                    <span class="checkbox-text" data-for="dlis7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Long Short-Term Memory (LSTM)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlis8">
+                                    <span class="checkbox-text" data-for="dlis8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Transfer learning
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlis9">
+                                    <span class="checkbox-text" data-for="dlis9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Model optimization and tuning
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="dlp1">
+                                    <span class="checkbox-text" data-for="dlp1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/V61xy1ZnVTM?si=F_31padOFZoY_WVj" target="_blank">Image classification system</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlp2">
+                                    <span class="checkbox-text" data-for="dlp2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/QpzMWQvxXWk?si=56f0SyGmGAHOKGa0" target="_blank">Natural language processing model</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlp3">
+                                    <span class="checkbox-text" data-for="dlp3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/MmC4b7gPY0Q?si=6EkqDjheRseOHb4Q" target="_blank">Time series forecasting</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dlp4">
+                                    <span class="checkbox-text" data-for="dlp4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/ZObZRgyZ3Ig?si=p0JzyZ1VknTASHUt" target="_blank" class="profile-link">Style transfer application</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Deep Learning Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="dlResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dlResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Deep Learning Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Deep Learning:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/dp.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Neural Networks and Deep Learning</h3>
+                            <p>This comprehensive lecture series delves into neural network architectures, activation functions and backpropagation.</p>
+                            <a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/dp.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Convolutional Neural Networks (CNN)</h3>
+                            <p>This tutorial provides an in-depth exploration of Convolutional Neural Networks (CNNs), covering their architecture, functionality, and practical applications in deep learning.</p>
+                            <a href="https://youtu.be/QzY57FaENXg?si=Zh2MJAV1xkHFnwV3" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/dp.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Keras VS Tensorflow VS PyTorch</h3>
+                            <p>This comprehensive tutorial provides a comparison between these powerful Python libraries.</p>
+                            <a href="https://youtu.be/4L86D_fU6sQ?si=VmioajzoZTx7KTeo" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Advanced Deep Learning -->
+            <div class="roadmap-step">
+                <div class="step-number expert">5</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Advanced Deep Learning</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Explore cutting-edge deep learning architectures and techniques for solving complex problems in AI.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="advdl1">
+                                    <span class="checkbox-text" data-for="advdl1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Generative Adversarial Networks (GANs)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdl2">
+                                    <span class="checkbox-text" data-for="advdl2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Transformers and attention mechanisms
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdl3">
+                                    <span class="checkbox-text" data-for="advdl3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Graph Neural Networks
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdl4">
+                                    <span class="checkbox-text" data-for="advdl4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Reinforcement Learning
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdl5">
+                                    <span class="checkbox-text" data-for="advdl5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Self-supervised learning
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdl6">
+                                    <span class="checkbox-text" data-for="advdl6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Deep learning for computer vision
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdl7">
+                                    <span class="checkbox-text" data-for="advdl7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Deep learning for NLP
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdl8">
+                                    <span class="checkbox-text" data-for="advdl8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Model explainability
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdl9">
+                                    <span class="checkbox-text" data-for="advdl9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Distributed training
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="advdlProj1">
+                                    <span class="checkbox-text" data-for="advdlProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/79IvwU3G5_Q?si=2Aa5MPEarPql6Kt3" target="_blank">Image generation with GANs</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdlProj2">
+                                    <span class="checkbox-text" data-for="advdlProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/iOdFUJiB0Zc?si=7rsRwYh6mQK2LMpK" target="_blank">Language model fine-tuning</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdlProj3">
+                                    <span class="checkbox-text" data-for="advdlProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/bD6V3rcr_54?si=6HNV1BXavezBCTJP" target="_blank">Reinforcement learning environment</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advdlProj4">
+                                    <span class="checkbox-text" data-for="advdlProj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/uLrReyH5cu0?si=QfDiUK4pFrcSsgOb" target="_blank">Multi-modal AI system</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Advanced Neural Architectures</h5>
+                                <a href="#" class="view-button" data-modal-target="anaResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="anaResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Deep Learning Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Deep Learning:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/dp.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>A Friendly Introduction to Generative Adversarial Networks (GANs)</h3>
+                            <p>This video provides an accessible introduction to GANs, explaining their basic concepts and how they function.</p>
+                            <a href="https://www.youtube.com/watch?v=8L11aMN5KY8" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/dp.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Attention in Transformers, Step-by-Step</h3>
+                            <p>This tutorial demystifies attention mechanisms within Transformer models, offering a clear, step-by-step explanation.</p>
+                            <a href="https://www.youtube.com/watch?v=eMlx5fFNoYc" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/dp.jpg' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Recurrent Neural Networks, Transformers, and Attention</h3>
+                            <p>This lecture from MIT's Introduction to Deep Learning course discusses Recurrent Neural Networks, Transformers, and attention mechanisms.</p>
+                            <a href="https://www.youtube.com/watch?v=dqoEU9Ac3ek" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6: Specialized AI Applications -->
+            <div class="roadmap-step">
+                <div class="step-number expert">6</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Specialized AI Applications</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Apply your AI knowledge to specialized domains and learn to deploy AI systems at scale.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="appliedai1">
+                                    <span class="checkbox-text" data-for="appliedai1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Computer vision applications
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedai2">
+                                    <span class="checkbox-text" data-for="appliedai2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Natural language processing applications
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedai3">
+                                    <span class="checkbox-text" data-for="appliedai3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Speech recognition and synthesis
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedai4">
+                                    <span class="checkbox-text" data-for="appliedai4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Recommender systems
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedai5">
+                                    <span class="checkbox-text" data-for="appliedai5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        AI ethics and bias mitigation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedai6">
+                                    <span class="checkbox-text" data-for="appliedai6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        MLOps and model deployment
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedai7">
+                                    <span class="checkbox-text" data-for="appliedai7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Edge AI and optimization
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedai8">
+                                    <span class="checkbox-text" data-for="appliedai8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        AI system monitoring
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedai9">
+                                    <span class="checkbox-text" data-for="appliedai9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Cloud platforms for AI (AWS, Azure, GCP)
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="appliedaip1">
+                                    <span class="checkbox-text" data-for="appliedaip1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Production-ready AI service</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedaip2">
+                                    <span class="checkbox-text" data-for="appliedaip2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#" target="_blank">Real-time AI system</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedaip3">
+                                    <span class="checkbox-text" data-for="appliedaip3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Ethical AI assessment framework</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="appliedaip4">
+                                    <span class="checkbox-text" data-for="appliedaip4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Industry-specific AI solution</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Applied AI Systems</h5>
+                                <a href="#" class="view-button" data-modal-target="aaiResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="aaiResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Applied AI Systems Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Applied AI Systems:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/aiml-circle.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Complete Natural Language Processing (NLP) Tutorial in Python</h3>
+                            <p>This comprehensive tutorial covers the fundamentals of NLP using Python, including text processing techniques and practical implementations.</p>
+                            <a href="https://youtu.be/M7SWr5xObkA?si=GoSuq4Pm5FQHcNX9" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/aiml-circle.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>What is an AI Recommendation Engine?</h3>
+                            <p>A recommender system tutorial explains how to build models that suggest relevant content to users using various techniques.</p>
+                            <a href="https://youtu.be/gEdePRsDACc?si=ux6A1x-vgX-HYq0n" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/aiml-circle.webp' %}" alt="r">
+                        <div class="popup-card-content">
+                            <h3>Complete NLP Machine Learning In One Shot</h3>
+                            <p>This tutorial provides an end-to-end project-based approach to NLP, integrating real-time data processing and machine learning models.</p>
+                            <a href="https://www.youtube.com/watch?v=ENLEjGozrio" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Career Paths -->
+    <section class="career-paths, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>AI & Machine Learning Career Paths</h2>
+            </div>
+            <div class="career-grid">
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🤖</div>
+                    <h3>Machine Learning Engineer</h3>
+                    <ul>
+                        <li>Design and implement ML systems and pipelines.</li>
+                        <li><strong>Industries Hiring:</strong> Tech Companies, Healthcare, Finance, Automotive and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🧠</div>
+                    <h3>AI Research Scientist</h3>
+                    <ul>
+                        <li>Advance the state-of-the-art in artificial intelligence.</li>
+                        <li><strong>Industries Hiring:</strong> Academia, Research Labs, Tech Giants, Defense and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">📊</div>
+                    <h3>Computer Vision Engineer</h3>
+                    <ul>
+                        <li>Develop systems that can process and understand visual data.</li>
+                        <li><strong>Industries Hiring:</strong> Robotics, Healthcare, Security, Retail and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">💬</div>
+                    <h3>NLP Engineer</h3>
+                    <ul>
+                        <li>Build systems for processing and generating human language.</li>
+                        <li><strong>Industries Hiring:</strong> Tech Giants, Customer Service, Finance, Media and many more!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-button">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chatbot-box" class="hidden">
+        <div id="chat-header">Ask UpSkillX Bot <span id="chat-close">&times;</span></div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something...">
+            <button id="send-chat"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+    
+
+    <!-- CTA Section -->
+    {% comment %} <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your AI & Machine Learning Journey?</h2>
+                <p>Join thousands of students who have successfully followed our roadmap to become professional AI specialists.</p>
+                <a href="#" class="btn btn-primary">SIGN UP NOW</a>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+    <!-- Scripts -->
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'darkmodescript.js' %}"></script>
+    <script src="{% static 'progress.js' %}"></script>
+    <script src="{% static 'chatbot.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

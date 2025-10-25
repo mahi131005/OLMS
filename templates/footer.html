@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpSkillX - Online Learning Platform</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>UpSkillX</h3>
+                    <p>Empowering learners worldwide with skills for the future.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="{% url 'webdev' %}">Web Development</a></li>
+                        <li><a href="{% url 'datascience' %}">Data Science</a></li>
+                        <li><a href="{% url 'mobiledev' %}">Mobile Development</a></li>
+                        <li><a href="{% url 'aiml' %}">AI & Machine Learning</a></li>
+                        <li><a href="{% url 'cybersec' %}">Cybersecurity</a></li>
+                        <li><a href="{% url 'cloudcomp' %}">Cloud Computing</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-newsletter">
+                    <h4>Feedback</h4>
+                    <p>"Help us improve! Please share your valuable feedback." 😊</p>
+                        <a href="{% url 'feedback' %}">
+                            <button class="btn btn-primary">Feedback Form</button>
+                        </a>                        
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UpSkillX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

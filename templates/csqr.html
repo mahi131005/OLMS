@@ -1,0 +1,264 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheets and Quick References</title>
+    <link href="{% static 'csqr.css' %}" rel="stylesheet">
+    <link href="{% static 'darkmode.css' %}" rel="stylesheet">
+    <link href="{% static 'chatbot.css' %}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="{% url 'index' %}" class="back-button">← Back to Home</a>
+            <h1>Cheat Sheets and Quick References</h1>
+        </header>
+
+        <main class="grid-container">
+            <!-- Web Development -->
+            <section class="card">
+                <div class="img-header">
+                    <img src="{% static 'images/webdev-circle.webp' %}" alt="Web Development">
+                    <h2>Web Development</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://devhints.io/html" target="_blank">HTML5 Cheat Sheet</a>
+                        <div class="resource-description">Complete guide to HTML5 elements, attributes and features</div>
+                    </li>
+                    <li>
+                        <a href="https://devhints.io/css" target="_blank">CSS3 Reference</a>
+                        <div class="resource-description">Properties, selectors, and responsive design patterns</div>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference" target="_blank">JavaScript Reference (MDN)</a>
+                        <div class="resource-description">Comprehensive documentation for JavaScript</div>
+                    </li>
+                    <li>
+                        <a href="https://react.dev/reference/react" target="_blank">React Quick Reference</a>
+                        <div class="resource-description">API reference and hooks documentation</div>
+                    </li>
+                    <li>
+                        <a href="https://sass-lang.com/documentation/" target="_blank">Sass Documentation</a>
+                        <div class="resource-description">Guide to Sass variables, mixins, and functions</div>
+                    </li>
+                    <li>
+                        <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank">VS Code Keyboard Shortcuts</a>
+                        <div class="resource-description">Essential shortcuts for productivity</div>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API" target="_blank">Web APIs Reference</a>
+                        <div class="resource-description">Browser APIs for modern web applications</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Data Science -->
+            <section class="card">
+                <div class="img-header">
+                    <img src="{% static 'images/datascience-circle.webp' %}" alt="Web Development">
+                    <h2>Data Science</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf" target="_blank">Pandas Cheat Sheet</a>
+                        <div class="resource-description">Essential operations for data manipulation</div>
+                    </li>
+                    <li>
+                        <a href="https://matplotlib.org/cheatsheets/" target="_blank">Matplotlib Guide</a>
+                        <div class="resource-description">Visualization library reference with examples</div>
+                    </li>
+                    <li>
+                        <a href="https://numpy.org/doc/stable/user/absolute_beginners.html" target="_blank">NumPy Beginners Guide</a>
+                        <div class="resource-description">Array operations and mathematical functions</div>
+                    </li>
+                    <li>
+                        <a href="https://scikit-learn.org/stable/tutorial/machine_learning_map/" target="_blank">Scikit-learn Algorithm Cheat Sheet</a>
+                        <div class="resource-description">ML algorithm selection flowchart</div>
+                    </li>
+                    <li>
+                        <a href="https://seaborn.pydata.org/tutorial.html" target="_blank">Seaborn Visualization</a>
+                        <div class="resource-description">Statistical data visualization reference</div>
+                    </li>
+                    <li>
+                        <a href="https://www.datacamp.com/cheat-sheet/sql-basics-cheat-sheet" target="_blank">SQL Basics Cheat Sheet</a>
+                        <div class="resource-description">Database query essentials</div>
+                    </li>
+                    <li>
+                        <a href="https://www.rstudio.com/resources/cheatsheets/" target="_blank">R Studio Cheat Sheets</a>
+                        <div class="resource-description">Collection of R packages and functions</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Mobile Development -->
+            <section class="card">
+                <div class="img-header">
+                    <img src="{% static 'images/mobiledev-circle.png' %}" alt="Web Development">
+                    <h2>Mobile Development</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://developer.android.com/guide" target="_blank">Android Developer Guides</a>
+                        <div class="resource-description">Official Android development documentation</div>
+                    </li>
+                    <li>
+                        <a href="https://developer.apple.com/documentation/swift" target="_blank">Swift Documentation</a>
+                        <div class="resource-description">Apple's programming language reference</div>
+                    </li>
+                    <li>
+                        <a href="https://reactnative.dev/docs/components-and-apis" target="_blank">React Native Components</a>
+                        <div class="resource-description">Core components and APIs reference</div>
+                    </li>
+                    <li>
+                        <a href="https://flutter.dev/docs/cookbook" target="_blank">Flutter Cookbook</a>
+                        <div class="resource-description">Recipes for common mobile development tasks</div>
+                    </li>
+                    <li>
+                        <a href="https://kotlinlang.org/docs/reference/" target="_blank">Kotlin Language Reference</a>
+                        <div class="resource-description">Syntax and features documentation</div>
+                    </li>
+                    <li>
+                        <a href="https://developer.apple.com/design/human-interface-guidelines/" target="_blank">iOS Human Interface Guidelines</a>
+                        <div class="resource-description">Design principles for iOS apps</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- AI/ML -->
+            <section class="card">
+                <div class="img-header">
+                    <img src="{% static 'images/aiml-circle.webp' %}" alt="Web Development">
+                    <h2>AI/ML</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://pytorch.org/tutorials/" target="_blank">PyTorch Tutorials</a>
+                        <div class="resource-description">Deep learning framework documentation</div>
+                    </li>
+                    <li>
+                        <a href="https://www.tensorflow.org/api_docs" target="_blank">TensorFlow API Reference</a>
+                        <div class="resource-description">Complete API documentation for TensorFlow</div>
+                    </li>
+                    <li>
+                        <a href="https://huggingface.co/docs" target="_blank">Hugging Face Transformers</a>
+                        <div class="resource-description">NLP models and pipeline documentation</div>
+                    </li>
+                    <li>
+                        <a href="https://scikit-learn.org/stable/user_guide.html" target="_blank">Scikit-learn User Guide</a>
+                        <div class="resource-description">Comprehensive ML library documentation</div>
+                    </li>
+                    <li>
+                        <a href="https://keras.io/api/" target="_blank">Keras API Reference</a>
+                        <div class="resource-description">High-level neural networks API</div>
+                    </li>
+                    <li>
+                        <a href="https://opencv.org/opencv-free-course/" target="_blank">OpenCV Reference</a>
+                        <div class="resource-description">Computer vision library documentation</div>
+                    </li>
+                    <li>
+                        <a href="https://platform.openai.com/docs/api-reference" target="_blank">OpenAI API Reference</a>
+                        <div class="resource-description">Guide to using GPT models via API</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Cybersecurity -->
+            <section class="card">
+                <div class="img-header">
+                    <img src="{% static 'images/cybersec-circle.webp' %}" alt="Web Development">
+                    <h2>Cybersecurity</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP Top 10</a>
+                        <div class="resource-description">Web application security risks</div>
+                    </li>
+                    <li>
+                        <a href="https://www.sans.org/security-resources/" target="_blank">SANS Security Resources</a>
+                        <div class="resource-description">Research papers and security cheat sheets</div>
+                    </li>
+                    <li>
+                        <a href="https://book.hacktricks.xyz/" target="_blank">HackTricks</a>
+                        <div class="resource-description">Penetration testing techniques and tools</div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/swisskyrepo/PayloadsAllTheThings" target="_blank">PayloadsAllTheThings</a>
+                        <div class="resource-description">Useful payloads for web penetration testing</div>
+                    </li>
+                    <li>
+                        <a href="https://www.rapid7.com/fundamentals/" target="_blank">Cybersecurity Fundamentals</a>
+                        <div class="resource-description">Core security concepts and practices</div>
+                    </li>
+                    <li>
+                        <a href="https://portswigger.net/web-security/all-materials" target="_blank">Web Security Academy</a>
+                        <div class="resource-description">Web vulnerability tutorials and labs</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Cloud Computing -->
+            <section class="card">
+                <div class="img-header">
+                    <img src="{% static 'images/cloudcomp-circle.jpg' %}" alt="Web Development">
+                    <h2>Cloud Computing</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a href="https://docs.aws.amazon.com/index.html" target="_blank">AWS Documentation</a>
+                        <div class="resource-description">Complete guide to AWS services</div>
+                    </li>
+                    <li>
+                        <a href="https://cloud.google.com/docs" target="_blank">Google Cloud Platform Docs</a>
+                        <div class="resource-description">GCP services and architecture</div>
+                    </li>
+                    <li>
+                        <a href="https://learn.microsoft.com/en-us/azure/" target="_blank">Microsoft Azure Documentation</a>
+                        <div class="resource-description">Azure cloud services reference</div>
+                    </li>
+                    <li>
+                        <a href="https://kubernetes.io/docs/reference/" target="_blank">Kubernetes Reference</a>
+                        <div class="resource-description">Container orchestration platform documentation</div>
+                    </li>
+                    <li>
+                        <a href="https://docs.docker.com/reference/" target="_blank">Docker Reference</a>
+                        <div class="resource-description">Container technology commands and API</div>
+                    </li>
+                    <li>
+                        <a href="https://www.terraform.io/docs" target="_blank">Terraform Documentation</a>
+                        <div class="resource-description">Infrastructure as code reference</div>
+                    </li>
+                    <li>
+                        <a href="https://serverless.com/framework/docs/" target="_blank">Serverless Framework</a>
+                        <div class="resource-description">Building serverless applications</div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-button">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chatbot-box" class="hidden">
+        <div id="chat-header">Ask UpSkillX Bot <span id="chat-close">&times;</span></div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something...">
+            <button id="send-chat"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+
+    <script src="{% static 'darkmodescript.js' %}"></script>
+    <script src="{% static 'chatbot.js' %}"></script>
+
+</body>
+</html>

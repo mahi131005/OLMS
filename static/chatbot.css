@@ -1,0 +1,233 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/* Chatbot floating icon */
+#chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4361ee;
+    color: white;
+    padding: 16px;
+    border-radius: 50%;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+#chatbot-button:hover {
+    transform: scale(1.05);
+}
+
+/* Chat window */
+#chatbot-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 420px;
+    max-height: 500px;
+    background: #ffffff;
+    color: #000;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    border: 1px solid #ddd;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#chatbot-box.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Header */
+#chat-header {
+    background: linear-gradient(135deg, #4361ee, #1a5aa2);
+    color: white;
+    padding: 12px 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 20px 20px 0 0;
+}
+
+#chat-header .close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#chat-header .close-chat:hover {
+    color: #f9f9f9;
+    cursor: pointer;
+}
+/* Messages area */
+#chat-messages {
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+    font-size: 15px;
+    background-color: #f2f2f7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Common bubble styles */
+#chat-messages .user,
+#chat-messages .bot {
+    padding: 10px 14px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-weight: 400;
+    animation: fadeInBubble 0.3s ease-in-out;
+}
+
+/* User (right-aligned) */
+#chat-messages .user {
+    align-self: flex-end;
+    background-color: #4361ee;
+    color: white;
+    border-radius: 18px 18px 4px 18px;
+}
+
+/* Bot (left-aligned) */
+#chat-messages .bot {
+    align-self: flex-start;
+    background-color: #E5E5EA;
+    color: #000;
+    border-radius: 18px 18px 18px 4px;
+}
+
+/* Typing dots */
+.typing {
+    align-self: flex-start;
+    background-color: #E5E5EA;
+    border-radius: 18px 18px 18px 4px;
+    padding: 8px 12px;
+    display: inline-block;
+    animation: fadeInBubble 0.3s ease-in-out;
+}
+.typing span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 2px;
+    background-color: #555;
+    border-radius: 50%;
+    animation: blink 1.3s infinite;
+}
+.typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Input area */
+#chat-input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: #ffffff;
+    align-items: center;
+    gap: 8px;
+    border-radius: 0 0 20px 20px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+/* Circular Send Button */
+#send-chat {
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+#send-chat:hover {
+    background-color: #005edb;
+}
+
+/* Emoji/Icon Styling */
+#chat-messages .fa-smile,
+#chat-messages .fa-thumbs-up,
+#chat-messages .fa-heart {
+    margin-left: 6px;
+    color: #fbbc04;
+}
+
+.bot {
+    background-color: #f1f0f0;
+    border-radius: 18px;
+    padding: 8px 12px;
+    margin: 6px;
+    align-self: flex-start;
+    max-width: 70%;
+    animation: fadeInBubble 0.3s ease-in-out;
+}
+
+@keyframes fadeInBubble {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bubble Fade In */
+@keyframes fadeInBubble {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Typing Blink */
+@keyframes blink {
+    0%, 80%, 100% { opacity: 0; }
+    40% { opacity: 1; }
+}
+
+/* Scrollbar */
+#chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+#chat-messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+}

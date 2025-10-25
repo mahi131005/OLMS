@@ -1,0 +1,158 @@
+/* Default Light Mode */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --section-bg-color: #f5f5f5;
+    --card-bg-color: #e0e0e0;
+    --career-card-color: #e0e0e0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+    --section-bg-color: #202020;
+    --card-bg-color: #545454;
+    --career-card-color: #545454;
+    --sidebar-bg: black;
+    --sidebar-hover: #252525;
+    --sidebar-icon: #e0e0e0;
+    --sidebar-icon-hover: #ffffff;
+    --hover-bg:rgb(205, 205, 205);
+}
+
+/* Apply Theme */
+.hero-section {
+    background-color: var(--section-bg-color);
+    padding: 50px;
+    text-align: center;
+    transition: background-color 0.15s;
+}
+
+.sidebar {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    transition: width 0.15s;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.card-section {
+    background-color: var(--section-bg-color);
+    text-align: inherit;
+    transition: background-color 0.15s;
+    flex: 1;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(224, 222, 222, 0.861);
+}
+
+.card-dark {
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: background-color 0.15s;
+    font-size: 25px;
+}
+
+/* Career Card */
+.career-card-dark {
+    background-color: var(--career-card-color);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: background-color 0.15s;
+}
+
+/* Typography Adjustments */
+.career-card-dark h3,
+.career-card-dark p,
+.career-card-dark li,
+.step-description-dark,
+.what-youll-learn-dark li,
+.key-projects-dark li,
+.what-youll-learn-dark h4,
+.key-projects-dark h4,
+.section-header-dark h2,
+.section-header-dark p,
+.roadmap-level-dark p {
+    color: var(--text-color);
+}
+
+/* Sidebar */
+.dark-mode .sidebar {
+    background-color: var(--sidebar-bg);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Sidebar Items */
+.dark-mode .sidebar-item {
+    color: var(--sidebar-icon);
+}
+
+.dark-mode .sidebar-item:hover {
+    color: var(--sidebar-icon-hover);
+    background-color: var(--sidebar-hover);
+}
+
+/* Sidebar Icons */
+.dark-mode .sidebar-item i {
+    color: var(--sidebar-icon);
+}
+
+/* Tooltip in Dark Mode */
+.dark-mode .sidebar-item .tooltip {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Dark Mode Toggle Styling */
+label {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    background: var(--section-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+/* Hide Checkbox */
+#dark-mode-toggle {
+    display: none;
+}
+
+#toggle-icon {
+    font-size: 20px;
+    transition: color 0.15s ease-in-out;
+}
+

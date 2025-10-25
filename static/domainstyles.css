@@ -1,0 +1,571 @@
+/* Web Development Roadmap Specific Styles */
+
+/*Checkboxes for progress*/
+.what-youll-learn input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50; /* Light mode checkbox color */
+}
+
+body.dark-mode .what-youll-learn input[type="checkbox"] {
+    accent-color: #90ee90; /* Dark mode checkbox color */
+}
+
+.what-youll-learn label {
+    color: var(--text-color, #222);
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+.key-projects input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50;
+}
+
+body.dark-mode .key-projects input[type="checkbox"] {
+    accent-color: #90ee90;
+}
+
+.key-projects label {
+    color: var(--text-color, #222);
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+/* Congrats Message */
+.congrats-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#afd3f5;
+    color: #3a56d4;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 0 16px 16px;
+    z-index: 9999;
+    animation: slideDown 0.5s ease-out;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translate(-50%, -100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+
+/* Confetti Canvas */
+#confettiCanvas {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+}
+
+/* Hero Section */
+
+.project-link{
+    color: black;
+}
+.webdev-hero {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.webdev-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.webdev-hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Roadmap Introduction */
+.roadmap-intro {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+
+.roadmap-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.roadmap-level {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.level-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.level-icon.beginner {
+    background-color: #4caf50;
+}
+
+.level-icon.intermediate {
+    background-color: #2196f3;
+}
+
+.level-icon.advanced {
+    background-color: #ff9800;
+}
+
+.level-icon.expert {
+    background-color: #f44336;
+}
+
+.roadmap-level h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.roadmap-level p {
+    color: var(--text-light);
+}
+
+/* Roadmap Steps */
+.roadmap-steps {
+    padding: 80px 0;
+    background-color: var(--bg-color);
+}
+
+.roadmap-step {
+    display: flex;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.roadmap-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 4px;
+    height: calc(100% - 60px);
+    background-color: #e0e0e0;
+    z-index: 0;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    z-index: 1;
+    margin-right: 30px;
+}
+
+.step-number.beginner {
+    background-color: #4caf50;
+}
+
+.step-number.intermediate {
+    background-color: #2196f3;
+}
+
+.step-number.advanced {
+    background-color: #ff9800;
+}
+
+.step-number.expert {
+    background-color: #f44336;
+}
+
+.step-content {
+    flex: 1;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.step-header h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.step-level {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.step-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.step-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.what-youll-learn h4, .key-projects h4, .step-resources h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.what-youll-learn ul, .key-projects ul {
+    padding-left: 20px;
+    color: black;
+    list-style: none;
+}
+
+.what-youll-learn li, .key-projects li {
+    margin-bottom: 8px;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+}
+
+.key-projects a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.key-projects a:hover{
+    text-decoration: underline;
+}   
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.resource-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.resource-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+/* Career Paths */
+.career-paths {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+
+.career-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.career-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.career-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.career-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.career-card p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.career-card ul {
+    list-style: none;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.career-card li {
+    margin-bottom: 8px;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 20px;
+}
+
+.career-card li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .webdev-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .step-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .roadmap-step {
+        flex-direction: column;
+    }
+    
+    .roadmap-step:not(:last-child)::after {
+        left: 30px;
+        top: 60px;
+        height: calc(100% - 30px);
+    }
+    
+    .step-number {
+        margin-bottom: 20px;
+    }
+    
+    .webdev-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .webdev-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .step-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .roadmap-overview {
+        flex-direction: column;
+    }
+    
+    .roadmap-level {
+        width: 100%;
+    }
+    
+    .step-content {
+        padding: 20px;
+    }
+    
+    .step-header h3 {
+        font-size: 1.5rem;
+    }
+}
+
+label {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--section-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Max Width 992px: Tablets and smaller */
+@media (max-width: 992px) {
+    .webdev-hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .step-details {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-card {
+        padding: 15px;
+    }
+
+    .career-card {
+        padding: 20px;
+    }
+
+    .career-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .career-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Max Width 768px: Large Mobile Devices */
+@media (max-width: 768px) {
+    .roadmap-step {
+        flex-direction: column;
+    }
+
+    .step-number {
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+
+    .roadmap-step:not(:last-child)::after {
+        height: calc(100% - 40px);
+        left: 25px;
+    }
+
+    .step-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .webdev-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .webdev-hero-content p {
+        font-size: 1rem;
+    }
+
+    .resource-card h5 {
+        font-size: 1rem;
+    }
+
+    .resource-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Max Width 576px: Mobile Devices */
+@media (max-width: 576px) {
+    .roadmap-overview {
+        flex-direction: column;
+    }
+
+    .roadmap-level {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .step-content {
+        padding: 20px 15px;
+    }
+
+    .step-header h3 {
+        font-size: 1.4rem;
+    }
+
+    .step-description {
+        font-size: 1rem;
+    }
+
+    .career-grid {
+        gap: 20px;
+    }
+
+    .career-card {
+        padding: 15px;
+    }
+
+    .career-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .career-card p {
+        font-size: 0.85rem;
+    }
+
+    .career-card li {
+        font-size: 0.85rem;
+    }
+
+    .resource-card {
+        padding: 15px 10px;
+    }
+
+    .resource-icon {
+        font-size: 1.8rem;
+    }
+
+    .congrats-message {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+}
+
+/* Additional: Make project links more mobile friendly */
+@media (max-width: 480px) {
+    .project-link {
+        display: block;
+        word-break: break-word;
+    }
+}
+

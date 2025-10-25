@@ -1,0 +1,1002 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Development Roadmap - EduLearn</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'domainstyles.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="{% static 'domainstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'popupstyles.css' %}" rel="stylesheet">
+    <link href="{% static 'darkmode.css' %}" rel="stylesheet">
+    <link href="{% static 'chatbot.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    {% include 'header.html' %}
+
+    <!-- Hero Section -->
+    <section class="webdev-hero">
+        <div class="container">
+            <div class="webdev-hero-content">
+                <h1>Mobile Development Roadmap</h1>
+                <p>Master the art of building mobile applications for iOS and Android. From native to cross-platform development, learn everything you need to become a professional mobile developer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Introduction -->
+    <section class="roadmap-intro, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Your Journey to Becoming a Mobile Developer</h2>
+                <p>Follow this roadmap to go from complete beginner to professional mobile developer. Each stage builds upon the previous one, giving you a solid foundation in mobile app development.</p>
+            </div>
+            <div class="roadmap-overview">
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon beginner">
+                        <span>1</span>
+                    </div>
+                    <h3>Beginner</h3>
+                    <p>Learn the fundamentals</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon intermediate">
+                        <span>2</span>
+                    </div>
+                    <h3>Intermediate</h3>
+                    <p>Build interactive apps</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon advanced">
+                        <span>3</span>
+                    </div>
+                    <h3>Advanced</h3>
+                    <p>Master app ecosystems</p>
+                </div>
+                <div class="roadmap-level, roadmap-level-dark">
+                    <div class="level-icon expert">
+                        <span>4</span>
+                    </div>
+                    <h3>Expert</h3>
+                    <p>Full-featured applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Steps -->
+    <section class="roadmap-steps">
+        <div class="container">
+            <!-- Step 1: Programming Fundamentals -->
+            <div class="roadmap-step">
+                <div class="step-number beginner">1</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Programming Fundamentals</h3>
+                        <span class="step-level">Beginner</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Build a strong foundation in programming concepts that will support your mobile development journey.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="prog1">
+                                    <span class="checkbox-text" data-for="prog1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Programming basics and logic
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="prog2">
+                                    <span class="checkbox-text" data-for="prog2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Data types and variables
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="prog3">
+                                    <span class="checkbox-text" data-for="prog3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Control structures (if/else, loops)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="prog4">
+                                    <span class="checkbox-text" data-for="prog4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Functions and methods
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="prog5">
+                                    <span class="checkbox-text" data-for="prog5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Object-oriented programming
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="prog6">
+                                    <span class="checkbox-text" data-for="prog6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Data structures (arrays, lists, maps)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="prog7">
+                                    <span class="checkbox-text" data-for="prog7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Algorithms and problem-solving
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="prog8">
+                                    <span class="checkbox-text" data-for="prog8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Version control with Git
+                                    </span>
+                                </li>                                
+                            </ul>
+                            <div class="congrats-message" id="congratsMessage">🎉 Congratulations on completing a step! 🎉</div>
+                        </div>
+                        <canvas id="confettiCanvas"></canvas>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="progProj1">
+                                    <span class="checkbox-text" data-for="progProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/TXCj39dGLlY?si=VlA7oi1T2zPKP-ZH" target="_blank">Simple calculator app</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="progProj2">
+                                    <span class="checkbox-text" data-for="progProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/1XDZ9Dy6qo4?si=up0goM84Zheg3SoO" target="_blank">To-do list command-line app</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="progProj3">
+                                    <span class="checkbox-text" data-for="progProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/4NTCdPXLEFw?si=ZFfuuMvsRWW1DJzE" target="_blank">Basic data processing script</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Programming Fundamentals</h5>
+                                <a href="#" class="view-button" data-modal-target="pfResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pfResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Programming Fundamentals Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Programming Fundamentals:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/pf.png' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Programming Fundamentals - Full Course</h3>
+                            <p>This comprehensive course covers programming basics, data types, control structures, functions, and object-oriented programming concepts.</p>
+                            <a href="https://www.youtube.com/watch?v=8PopR3x-VMY" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/pf.png' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Data Structures and Algorithms + Git Version Control - Full Course</h3>
+                            <p>This tutorial delves into data structures, algorithms, problem-solving techniques, and provides an introduction to version control using Git.</p>
+                            <a href="https://www.youtube.com/watch?v=RBSGKlAvoiM" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 2: Android Development with Kotlin -->
+            <div class="roadmap-step">
+                <div class="step-number intermediate">2</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Android Development with Kotlin</h3>
+                        <span class="step-level">Intermediate</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Learn how to build native Android applications using Kotlin, Google's preferred language for Android development.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="android1">
+                                    <span class="checkbox-text" data-for="android1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Kotlin programming language
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android2">
+                                    <span class="checkbox-text" data-for="android2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Android Studio IDE
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android3">
+                                    <span class="checkbox-text" data-for="android3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Android app architecture
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android4">
+                                    <span class="checkbox-text" data-for="android4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Activities and Fragments
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android5">
+                                    <span class="checkbox-text" data-for="android5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        UI design with XML
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android6">
+                                    <span class="checkbox-text" data-for="android6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Layouts and Material Design
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android7">
+                                    <span class="checkbox-text" data-for="android7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Navigation components
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android8">
+                                    <span class="checkbox-text" data-for="android8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        RecyclerView and Adapters
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android9">
+                                    <span class="checkbox-text" data-for="android9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Data persistence (SharedPreferences, Room)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android10">
+                                    <span class="checkbox-text" data-for="android10" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Threading and coroutines
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="androidproj1">
+                                    <span class="checkbox-text" data-for="androidproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/gj0g1a75Lmo?si=x2VoBe8b0KugMh5x" target="_blank">Weather forecast app</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="androidproj2">
+                                    <span class="checkbox-text" data-for="androidproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/9qqogGMd6lE?si=gCA4KlUna8EM0_EP" target="_blank">News reader application</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="androidproj3">
+                                    <span class="checkbox-text" data-for="androidproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/je2SAysAX-w?si=XHLJG7KB33gWFIEn" target="_blank">Task management app with local storage</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="androidproj4">
+                                    <span class="checkbox-text" data-for="androidproj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/JthqGlEQo7A?si=K_J33khi5xnfjHcd" target="_blank">Online Quiz Application</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Android Development Masterclass</h5>
+                                <a href="#" class="view-button" data-modal-target="kotlinResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="kotlinResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Android Development with Kotlin Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Android Development with Kotlin:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/kotlin.png' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Android Development(Kotlin) Full Course For Beginners</h3>
+                            <p>This extensive course offers a 12-hour comprehensive tutorial on Android development with Kotlin, covering fundamental to advanced topics.</p>
+                            <a href="https://www.youtube.com/watch?v=BCSlZIUj18Y" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/kotlin.png' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Android Development Full Tutorial | Kotlin</h3>
+                            <p>This complete tutorial guides beginners through Android development using Kotlin, providing practical examples and in-depth explanations.</p>
+                            <a href="https://www.youtube.com/watch?v=9-pFPGAOSZQ" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 3: iOS Development with Swift -->
+            <div class="roadmap-step">
+                <div class="step-number intermediate">3</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>iOS Development with Swift</h3>
+                        <span class="step-level">Intermediate</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Learn how to build native iOS applications using Swift and Apple's development ecosystem.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="ios1">
+                                    <span class="checkbox-text" data-for="ios1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Swift programming language
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios2">
+                                    <span class="checkbox-text" data-for="ios2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Xcode IDE
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios3">
+                                    <span class="checkbox-text" data-for="ios3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        iOS app architecture
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios4">
+                                    <span class="checkbox-text" data-for="ios4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        UIKit framework
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios5">
+                                    <span class="checkbox-text" data-for="ios5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        View controllers and navigation
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios6">
+                                    <span class="checkbox-text" data-for="ios6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Interface Builder and Auto Layout
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios7">
+                                    <span class="checkbox-text" data-for="ios7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Table and collection views
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios8">
+                                    <span class="checkbox-text" data-for="ios8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Core Data for persistence
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios9">
+                                    <span class="checkbox-text" data-for="ios9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Networking and API integration
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ios10">
+                                    <span class="checkbox-text" data-for="ios10" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        SwiftUI basics
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="iosproj1">
+                                    <span class="checkbox-text" data-for="iosproj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/uSanD_pFwis?si=w1BztQ9jrvU6eAgV" target="_blank">Recipe browsing app</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="iosproj2">
+                                    <span class="checkbox-text" data-for="iosproj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/7vOF1kGnsmo?si=hLDN7-GZAtvrLGBY" target="_blank">Fitness tracking application</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="iosproj3">
+                                    <span class="checkbox-text" data-for="iosproj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/t_mypMqSXNw?si=Dgt4z7tCNMxMhpXi" target="_blank">To-Do List App</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="iosproj4">
+                                    <span class="checkbox-text" data-for="iosproj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/Bu6fAlltatA?si=OYze5w_VBmicW4DV" target="_blank">Expense Tracker App</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>iOS Development with Swift</h5>
+                                <a href="#" class="view-button" data-modal-target="swiftResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="swiftResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>iOS Development with Swift Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn iOS Development with Swift:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/swift.jpg' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>iOS Development with Swift - Full Course</h3>
+                            <p>This full-length course offers an in-depth introduction to iOS development using Swift, covering fundamental concepts and practical applications.</p>
+                            <a href="https://www.youtube.com/watch?v=comQ1-x2a1Q" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/swift.jpg' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>iOS App Development with Swift Tutorial</h3>
+                            <p>This tutorial guides you through the process of building iOS applications using Swift, focusing on essential tools and techniques.</p>
+                            <a href="https://www.youtube.com/watch?v=FcsY1YPBwzQ" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 4: Cross-Platform Development -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">4</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Cross-Platform Development</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Learn frameworks that allow you to build applications for both iOS and Android with a single codebase.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="mobile1">
+                                    <span class="checkbox-text" data-for="mobile1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        React Native
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile2">
+                                    <span class="checkbox-text" data-for="mobile2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        JavaScript/TypeScript
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile3">
+                                    <span class="checkbox-text" data-for="mobile3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Component-based architecture
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile4">
+                                    <span class="checkbox-text" data-for="mobile4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        State management
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile5">
+                                    <span class="checkbox-text" data-for="mobile5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Navigation in React Native
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile6">
+                                    <span class="checkbox-text" data-for="mobile6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        UI libraries (styled-components, UI Kitten)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile7">
+                                    <span class="checkbox-text" data-for="mobile7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Native modules integration
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile8">
+                                    <span class="checkbox-text" data-for="mobile8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Flutter and Dart
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile9">
+                                    <span class="checkbox-text" data-for="mobile9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Widget-based UI development
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobile10">
+                                    <span class="checkbox-text" data-for="mobile10" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Flutter state management
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="mobileProj1">
+                                    <span class="checkbox-text" data-for="mobileProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/QYlEOxCfErg?si=qqTSLuhywGyUW1aY" target="_blank">Cross-platform e-commerce app</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobileProj2">
+                                    <span class="checkbox-text" data-for="mobileProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/ubmLxAvImBs?si=vw6PcuiBaNAOK4P6" target="_blank">Social networking application</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobileProj3">
+                                    <span class="checkbox-text" data-for="mobileProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/4TFbXepOjLI?si=MNDgAXoJ7Jlql25n" target="_blank">Music streaming app</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobileProj4">
+                                    <span class="checkbox-text" data-for="mobileProj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/UKdQjQX1Pko?si=kS0OjnRCG7xU-_s3" target="_blank">Travel companion with maps</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Cross-Platform Development</h5>
+                                <a href="#" class="view-button" data-modal-target="cpdResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cpdResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Cross-Platform Development Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Cross-Platform Development:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/flutter.png' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Flutter Tutorial for Beginners - Build iOS and Android Apps with Flutter & Dart</h3>
+                            <p>This tutorial introduces Flutter, a popular framework for building cross-platform mobile applications, guiding you through the development process for both iOS and Android platforms.</p>
+                            <a href="https://www.youtube.com/watch?v=1gDhl4leEzA" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/react.webp' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>React Native Tutorial for Beginners - Build a React Native App</h3>
+                            <p>This tutorial provides a step-by-step guide to building a cross-platform mobile application using React Native, covering essential concepts and practical implementation.</p>
+                            <a href="https://www.youtube.com/watch?v=0-S5a0eXPoc" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 5: Mobile Backend Development -->
+            <div class="roadmap-step">
+                <div class="step-number advanced">5</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Mobile Backend Development</h3>
+                        <span class="step-level">Advanced</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Learn how to build and integrate backend services that power your mobile applications.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="backend1">
+                                    <span class="checkbox-text" data-for="backend1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        RESTful API development
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backend2">
+                                    <span class="checkbox-text" data-for="backend2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Firebase (Authentication, Firestore, Storage)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backend3">
+                                    <span class="checkbox-text" data-for="backend3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Database integration (SQL and NoSQL)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backend4">
+                                    <span class="checkbox-text" data-for="backend4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        User authentication and authorization
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backend5">
+                                    <span class="checkbox-text" data-for="backend5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Cloud functions and serverless architecture
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backend6">
+                                    <span class="checkbox-text" data-for="backend6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Push notifications
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backend7">
+                                    <span class="checkbox-text" data-for="backend7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Real-time data with WebSockets
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backend8">
+                                    <span class="checkbox-text" data-for="backend8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Content delivery networks (CDNs)
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backend9">
+                                    <span class="checkbox-text" data-for="backend9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        API security best practices
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="backendProj1">
+                                    <span class="checkbox-text" data-for="backendProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/domt_Sx-wTY?si=axz4XpNrK9Ku0Cv1" target="_blank">Chat application with real-time messaging</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backendProj2">
+                                    <span class="checkbox-text" data-for="backendProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Content sharing platform with user accounts</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backendProj3">
+                                    <span class="checkbox-text" data-for="backendProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Location-based service with custom API</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="backendProj4">
+                                    <span class="checkbox-text" data-for="backendProj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="https://youtu.be/Wl2GmdOPeXU?si=J6gVL372ZN54v7SG" target="_blank">E-commerce backend with payment processing</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Mobile Backend Development</h5>
+                                <a href="#" class="view-button" data-modal-target="mobbackResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobbackResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Mobile Backend Development Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Mobile Backend Development:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/mobiledev-circle.png' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Easy SYSTEM DESIGN walkthrough: design a mobile app backend!</h3>
+                            <p>This video offers a step-by-step guide to designing a mobile app backend, focusing on system design principles and best practices.</p>
+                            <a href="https://www.youtube.com/watch?v=5urMYLlsLhs" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/mobiledev-circle.png' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Flutter Mobile App + Node.js Back End Tutorial</h3>
+                            <p>This tutorial demonstrates building a full-stack e-commerce app using Flutter for the front end and Node.js for the back end.</p>
+                            <a href="https://www.youtube.com/watch?v=ylJz7N-dv1E" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Step 6: Advanced Mobile Development -->
+            <div class="roadmap-step">
+                <div class="step-number expert">6</div>
+                <div class="step-content, card-section">
+                    <div class="step-header">
+                        <h3>Advanced Mobile Development</h3>
+                        <span class="step-level">Expert</span>
+                    </div>
+                    <p class="step-description, step-description-dark">Master advanced mobile development concepts to build professional, production-ready applications.</p>
+                    <div class="step-details">
+                        <div class="what-youll-learn what-youll-learn-dark">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="advMobile1">
+                                    <span class="checkbox-text" data-for="advMobile1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        CI/CD for mobile applications
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile2">
+                                    <span class="checkbox-text" data-for="advMobile2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        App performance optimization
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile3">
+                                    <span class="checkbox-text" data-for="advMobile3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Advanced UI animations
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile4">
+                                    <span class="checkbox-text" data-for="advMobile4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Offline-first architecture
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile5">
+                                    <span class="checkbox-text" data-for="advMobile5" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Augmented reality integration
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile6">
+                                    <span class="checkbox-text" data-for="advMobile6" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Machine learning for mobile
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile7">
+                                    <span class="checkbox-text" data-for="advMobile7" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Mobile security best practices
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile8">
+                                    <span class="checkbox-text" data-for="advMobile8" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        App Store and Play Store optimization
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile9">
+                                    <span class="checkbox-text" data-for="advMobile9" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Analytics and user behavior tracking
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="advMobile10">
+                                    <span class="checkbox-text" data-for="advMobile10" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        Advanced testing strategies
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <div class="key-projects key-projects-dark">
+                            <h4>Key Projects:</h4>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="mobileProj1">
+                                    <span class="checkbox-text" data-for="mobileProj1" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">AR-enhanced shopping application</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobileProj2">
+                                    <span class="checkbox-text" data-for="mobileProj2" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Enterprise-grade mobile application</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobileProj3">
+                                    <span class="checkbox-text" data-for="mobileProj3" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">Mobile app with ML-powered features</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mobileProj4">
+                                    <span class="checkbox-text" data-for="mobileProj4" style="color: var(--text-color, #222); font-size: 1.1rem; margin-left: 8px; display: inline-block; opacity: 1; visibility: visible; cursor: pointer;">
+                                        <a href="#">High-performance gaming app</a>
+                                    </span>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-resources">
+                        <h4>Recommended Resources:</h4>
+                        <div class="resources-grid">
+                            <div class="resource-card, card-dark">
+                                <div class="resource-icon">📚</div>
+                                <h5>Advanced Mobile Development Techniques</h5>
+                                <a href="#" class="view-button" data-modal-target="advmobdevResourcesModal">View Resources &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="advmobdevResourcesModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Advanced Mobile Development Techniques Video Resources</h2>
+                    <p>Check out these helpful YouTube tutorials to learn Advanced Mobile Development Techniques:</p>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/advancemobiledev.jpg' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Figma Advanced Animations - UI</h3>
+                            <p>This video delves into optimizing app performance and implementing security best practices in Android development.</p>
+                            <a href="https://youtu.be/20IfkyJigKg?si=IzP6Hp4C4NZb8Ryv" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>
+                    
+                    <div class="popup-card">
+                        <img src="{% static 'images/advancemobiledev.jpg' %}" alt="angular">
+                        <div class="popup-card-content">
+                            <h3>Advanced App Store Optimization Strategies</h3>
+                            <p>This tutorial explores implementing app store optimization.</p>
+                            <a href="https://youtu.be/d8TOuMnMv74?si=2u76jbZv5e9zXZfC" target="_blank">Watch Tutorial</a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+    </section>
+
+    <section class="career-paths, hero-section">
+        <div class="container">
+            <div class="section-header, section-header-dark">
+                <h2>Mobile Development Career Paths</h2>
+            </div>
+            <div class="career-grid">
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">📱</div>
+                    <h3>Android Developer</h3>
+                    <ul>
+                        <li>Specialize in building applications for the Android ecosystem.</li>
+                        <li><strong>Industries Hiring:</strong> Tech Companies, Startups, Gaming, E-Commerce and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🍎</div>
+                    <h3>iOS Developer</h3>
+                    <ul>
+                        <li>Focus on creating applications for Apple's iOS platform.</li>
+                        <li><strong>Industries Hiring:</strong> Tech Giants, Startups, E-Commerce, Media and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">⚛️</div>
+                    <h3>Cross-Platform Developer</h3>
+                    <ul>
+                        <li>Build applications that work across multiple mobile platforms.</li>
+                        <li><strong>Industries Hiring:</strong> Software Firms, E-Commerce, Media, Education and many more!</li>
+                    </ul>
+                </div>
+                <div class="career-card, career-card-dark">
+                    <div class="career-icon">🧩</div>
+                    <h3>Mobile Solutions Architect</h3>
+                    <ul>
+                        <li>Design and oversee complex mobile application systems.</li>
+                        <li><strong>Industries Hiring:</strong> Enterprise Companies, Consulting Firms, Government and many more!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-button">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div id="chatbot-box" class="hidden">
+        <div id="chat-header">Ask UpSkillX Bot <span id="chat-close">&times;</span></div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something...">
+            <button id="send-chat"><i class="bi bi-send-fill"></i></button>
+        </div>
+    </div>
+    
+
+    <!-- CTA Section -->
+    {% comment %} <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Mobile Development Journey?</h2>
+                <p>Join thousands of students who have successfully followed our roadmap to become professional mobile developers.</p>
+                <a href="#" class="btn btn-primary">SIGN UP NOW</a>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+    <!-- Scripts -->
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'darkmodescript.js' %}"></script>
+    <script src="{% static 'progress.js' %}"></script>
+    <script src="{% static 'chatbot.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
