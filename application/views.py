@@ -146,20 +146,6 @@ def admin_dashboard(request):
 
     return render(request, 'admin_dashboard.html', {'feedbacks': feedbacks})
 
-def chatbot_response(request):
-    if request.method == 'POST':
-        user_input = request.POST.get('message')
-        if not user_input:
-            return JsonResponse({'error': 'Empty message'}, status=400)
-            
-        try:
-            reply = get_openai_response(user_input)
-            return JsonResponse({'response': reply})
-        except Exception as e:
-            return JsonResponse({'error': str(e)}, status=500)
-    
-    return JsonResponse({'error': 'Invalid request method'}, status=405)
-
 def export_feedback_pdf(request):
     if not request.user.is_superuser:
         return HttpResponse("Unauthorized", status=401)
